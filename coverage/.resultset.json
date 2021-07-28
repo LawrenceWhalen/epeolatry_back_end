@@ -14,23 +14,19 @@
           null
         ]
       },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book_poro.rb": {
         "lines": [
           1,
-          null,
           1,
-          2,
           null,
-          2,
           null,
-          2,
           null,
           null,
           1,
-          null,
           1,
-          2,
-          2,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -44,26 +40,6 @@
         "branches": {
         }
       },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/controllers/application_controller.rb": {
         "lines": [
           0,
@@ -71,8 +47,32 @@
         ],
         "branches": {
         }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1627512357
+    "timestamp": 1627513198
   }
 }

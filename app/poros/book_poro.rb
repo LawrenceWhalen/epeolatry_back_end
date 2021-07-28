@@ -1,4 +1,4 @@
-class Book
+class BookPoro
   attr_reader :title, 
               :authors, 
               :description, 
