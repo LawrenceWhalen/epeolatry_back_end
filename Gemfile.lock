@@ -235,7 +235,6 @@ PLATFORMS
   x86-mingw32
   x86-mswin32
 
-
 DEPENDENCIES
   active_model_serializers
   bootsnap (>= 1.4.4)
@@ -251,6 +250,7 @@ DEPENDENCIES
   pry
   puma (~> 5.0)
   rails (~> 5.2.6)
+  rake
   rspec-rails
   shoulda-matchers
   simplecov
