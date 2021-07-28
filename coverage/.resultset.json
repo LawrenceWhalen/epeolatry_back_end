@@ -1,22 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/book.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/word.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/word.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/application_record.rb": {
         "lines": [
           0,
           0,
@@ -25,14 +18,16 @@
         "branches": {
         }
       },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/book.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book.rb": {
         "lines": [
-
+          0,
+          null,
+          0
         ],
         "branches": {
         }
       },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/controllers/application_controller.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0
@@ -40,7 +35,7 @@
         "branches": {
         }
       },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/services/book_service.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
         "lines": [
 
         ],
@@ -48,6 +43,6 @@
         }
       }
     },
-    "timestamp": 1627435780
+    "timestamp": 1627447437
   }
 }
