@@ -1,7 +1,37 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/word.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
         "lines": [
           0,
           0
@@ -34,15 +64,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
-        "lines": [
-
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1627447437
+    "timestamp": 1627511258
   }
 }
