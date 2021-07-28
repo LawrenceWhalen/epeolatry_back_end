@@ -1,6 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
         "lines": [
           1,
@@ -31,25 +44,19 @@
         "branches": {
         }
       },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           null,
           0
@@ -66,6 +73,6 @@
         }
       }
     },
-    "timestamp": 1627511258
+    "timestamp": 1627512357
   }
 }
