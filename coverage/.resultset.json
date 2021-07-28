@@ -1,13 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book.rb": {
-        "lines": [
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/word.rb": {
         "lines": [
           0,
@@ -20,6 +13,15 @@
         "lines": [
           0,
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book.rb": {
+        "lines": [
+          0,
+          null,
           0
         ],
         "branches": {
@@ -41,6 +43,6 @@
         }
       }
     },
-    "timestamp": 1627445286
+    "timestamp": 1627447437
   }
 }
