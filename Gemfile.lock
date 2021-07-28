@@ -235,6 +235,7 @@ PLATFORMS
   x86-mingw32
   x86-mswin32
 
+
 DEPENDENCIES
   active_model_serializers
   bootsnap (>= 1.4.4)

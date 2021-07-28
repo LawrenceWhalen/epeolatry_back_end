@@ -1,0 +1,53 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/book.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/word.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/book.rb": {
+        "lines": [
+
+        ],
+        "branches": {
+        }
+      },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/services/book_service.rb": {
+        "lines": [
+
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1627435780
+  }
+}
