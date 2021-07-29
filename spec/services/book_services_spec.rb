@@ -64,8 +64,8 @@ RSpec.describe 'book service' do
         actual = BookService.books_on_shelf
 
         expect(actual.class).to eq(Hash)
-        expect(actual[:items][0][:]).to eq(7)
-        expect(actual[:items][0][:]).to eq(1)
+        expect(actual[:items][0][:id]).to eq('PCcOMbEydAIC')
+        expect(actual[:items][1][:id]).to eq('ZrNzAwAAQBAJ')
       end
     end
   end
