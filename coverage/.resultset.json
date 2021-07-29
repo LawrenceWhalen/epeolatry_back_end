@@ -1,80 +1,78 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/facades/book_facade.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          20,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          null,
-          4,
-          null,
-          4,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          4,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book_poro.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          21,
-          21,
-          21,
-          21,
-          21,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/word.rb": {
         "lines": [
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/serializers/book_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/facades/book_facade.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book_poro.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           0
         ],
         "branches": {
@@ -87,8 +85,32 @@
         ],
         "branches": {
         }
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1627515898
+    "timestamp": 1627517864
   }
 }
