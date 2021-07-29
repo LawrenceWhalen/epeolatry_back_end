@@ -45,7 +45,7 @@ RSpec.describe UserBooksFacade do
         
         actual = UserBooksFacade.all_books
         VCR.turn_on!
-        
+        binding.pry
         expect(actual.class).to eq(Array)
         expect(actual[0].class).to eq(BookAndShelf)
       end
