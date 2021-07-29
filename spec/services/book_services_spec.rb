@@ -39,8 +39,7 @@ RSpec.describe 'book service' do
 
     describe '.book_shelves' do
       it 'returns a list of all of a users bookshelves' do
-        VCR.turn_off!
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=AIzaSyA2pg4G1iDnNU0qxOvhl8hi3ZJBjjc_yJw").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{Figaro.env.BOOK_KEY}").
          with(
            headers: {
        	  'Accept'=>'*/*',
@@ -49,19 +48,19 @@ RSpec.describe 'book service' do
            }).
          to_return(status: 200, body: File.open('./spec/assets/book_shelves.json'), headers: {})
 
-        actual = BookService.book_shelves
+        VCR.turn_off!
+          actual = BookService.book_shelves('auth_token')
+        VCR.turn_on!
 
         expect(actual.class).to eq(Hash)
         expect(actual[:items][0][:id]).to eq(7)
         expect(actual[:items][1][:id]).to eq(1)
-        VCR.turn_on!
       end
     end
     
     describe '.get_shelfs_books' do
       it 'returns all of the books off a users shelf' do
-        VCR.turn_off!
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=AIzaSyA2pg4G1iDnNU0qxOvhl8hi3ZJBjjc_yJw").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{Figaro.env.BOOK_KEY}").
          with(
            headers: {
        	  'Accept'=>'*/*',
@@ -70,12 +69,13 @@ RSpec.describe 'book service' do
            }).
          to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json'), headers: {})
 
-        actual = BookService.books_on_shelf(3)
+        VCR.turn_off!
+          actual = BookService.books_on_shelf(3, 'auth_token')
+        VCR.turn_on!
 
         expect(actual.class).to eq(Hash)
         expect(actual[:items][0][:id]).to eq('PCcOMbEydAIC')
         expect(actual[:items][1][:id]).to eq('ZrNzAwAAQBAJ')
-        VCR.turn_on!
       end
     end
   end

@@ -1,0 +1,212 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "inYs79gV4UQC",
+      "etag": "2YMF/0LE/pM",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/inYs79gV4UQC",
+      "volumeInfo": {
+        "title": "Snow Crash",
+        "authors": [
+          "Neal Stephenson"
+        ],
+        "publisher": "Penguin UK",
+        "publishedDate": "1994-10-27",
+        "description": "\"This Snow Crash thing--is it a virus, a drug, or a religion?\" Juanita shrugs. \"What's the difference?\" The only relief from the sea of logos is within the well-guarded borders of the Burbclaves. Is it any wonder that most sane folks have ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780141924045"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0141924047"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 448,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 204,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.27.24.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=inYs79gV4UQC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=inYs79gV4UQC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=inYs79gV4UQC&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=inYs79gV4UQC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Snow_Crash.html?hl=&id=inYs79gV4UQC"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "33"
+          }
+        ]
+      },
+      "userInfo": {
+        "updated": "2021-07-29T21:37:11.094Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=inYs79gV4UQC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8thMLkahggcC",
+      "etag": "WLVtXcibdvA",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/8thMLkahggcC",
+      "volumeInfo": {
+        "title": "Parable of the Sower",
+        "authors": [
+          "Octavia E. Butler"
+        ],
+        "publisher": "Open Road Media",
+        "publishedDate": "2012-07-24",
+        "description": "A New York Times Notable Book: In 2025, with the world descending into madness and anarchy, one woman begins a fateful journey toward a better future. “A stunner.” —Flea, musician and actor, TheWall Street Journal Lauren Olamina and her family ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781453263617"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1453263616"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 299,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 90,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.42.39.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8thMLkahggcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8thMLkahggcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=8thMLkahggcC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=8thMLkahggcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8thMLkahggcC"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "51"
+          }
+        ]
+      },
+      "userInfo": {
+        "isInMyBooks": true,
+        "updated": "2021-07-29T21:36:04.560Z",
+        "entitlementType": 1
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE_AND_RENTAL",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=8thMLkahggcC&rdid=book-8thMLkahggcC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          },
+          {
+            "finskyOfferType": 3,
+            "listPrice": {
+              "amountInMicros": 2990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 2690000,
+              "currencyCode": "USD"
+            },
+            "rentalDuration": {
+              "unit": "DAY",
+              "count": 3
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Parable_of_the_Sower-sample-epub.acsm?id=8thMLkahggcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Parable_of_the_Sower-sample-pdf.acsm?id=8thMLkahggcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8thMLkahggcC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
