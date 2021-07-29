@@ -14,7 +14,7 @@ class BookService
   end
 
   def self.book_shelves
-    response = cont.get "/books/v1/mylibrary/bookshelves"
+    response = con.get "/books/v1/mylibrary/bookshelves"
 
     body = response.body
     JSON.parse(body, symbolize_names: true)

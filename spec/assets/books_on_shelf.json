@@ -1,0 +1,415 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 4,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "PCcOMbEydAIC",
+      "etag": "Ct1/M039MMo",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/PCcOMbEydAIC",
+      "volumeInfo": {
+        "title": "Lilith's Brood",
+        "subtitle": "The Complete Xenogenesis Trilogy",
+        "authors": [
+          "Octavia E. Butler"
+        ],
+        "publisher": "Open Road Media",
+        "publishedDate": "2012-07-24",
+        "description": "The complete series about an alien species that could save humanity after nuclear apocalypse—or destroy it—from “one of science fiction’s finest writers” (The New York Times). The newest stage in human evolution begins in outer space. Survivors ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781453271728"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1453271724"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 746,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 16,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.25.22.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PCcOMbEydAIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PCcOMbEydAIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=PCcOMbEydAIC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=PCcOMbEydAIC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=PCcOMbEydAIC"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "28"
+          }
+        ]
+      },
+      "userInfo": {
+        "updated": "2021-07-29T19:26:26.426Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 15.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=PCcOMbEydAIC&rdid=book-PCcOMbEydAIC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 15990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Lilith_s_Brood-sample-epub.acsm?id=PCcOMbEydAIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Lilith_s_Brood-sample-pdf.acsm?id=PCcOMbEydAIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PCcOMbEydAIC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZrNzAwAAQBAJ",
+      "etag": "jSjDkAqxb5A",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/ZrNzAwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Three-Body Problem",
+        "authors": [
+          "Cixin Liu"
+        ],
+        "publisher": "Tor Books",
+        "publishedDate": "2014-11-11",
+        "description": "Soon to be a Netflix Original Series! “War of the Worlds for the 21st century.” – Wall Street Journal The Three-Body Problem is the first chance for English-speaking readers to experience the Hugo Award-winning phenomenon from China's most ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781466853447"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1466853441"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 400,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 116,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.9.7.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZrNzAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZrNzAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=ZrNzAwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ZrNzAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ZrNzAwAAQBAJ"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "14"
+          }
+        ]
+      },
+      "userInfo": {
+        "updated": "2021-07-29T19:25:41.008Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=ZrNzAwAAQBAJ&rdid=book-ZrNzAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZrNzAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8thMLkahggcC",
+      "etag": "YGVBPqQcKg0",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/8thMLkahggcC",
+      "volumeInfo": {
+        "title": "Parable of the Sower",
+        "authors": [
+          "Octavia E. Butler"
+        ],
+        "publisher": "Open Road Media",
+        "publishedDate": "2012-07-24",
+        "description": "A New York Times Notable Book: In 2025, with the world descending into madness and anarchy, one woman begins a fateful journey toward a better future. “A stunner.” —Flea, musician and actor, TheWall Street Journal Lauren Olamina and her family ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781453263617"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1453263616"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 299,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 90,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.42.39.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8thMLkahggcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8thMLkahggcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=8thMLkahggcC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=8thMLkahggcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8thMLkahggcC"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "51"
+          }
+        ]
+      },
+      "userInfo": {
+        "updated": "2021-07-29T19:24:56.515Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE_AND_RENTAL",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=8thMLkahggcC&rdid=book-8thMLkahggcC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 11990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          },
+          {
+            "finskyOfferType": 3,
+            "listPrice": {
+              "amountInMicros": 2990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 2690000,
+              "currencyCode": "USD"
+            },
+            "rentalDuration": {
+              "unit": "DAY",
+              "count": 3
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Parable_of_the_Sower-sample-epub.acsm?id=8thMLkahggcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Parable_of_the_Sower-sample-pdf.acsm?id=8thMLkahggcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8thMLkahggcC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yrYUvgAACAAJ",
+      "etag": "kBBgQhFTRyc",
+      "selfLink": "https://content-books.googleapis.com/books/v1/volumes/yrYUvgAACAAJ",
+      "volumeInfo": {
+        "title": "All You Need Is Kill",
+        "authors": [
+          "Hiroshi Sakurazaka"
+        ],
+        "publisher": "Haikasoru",
+        "publishedDate": "2009-07-21",
+        "description": "When the alien Mimics invade, Keiji Kiriya is just one of many recruits shoved into a suit of battle armor called a Jacket and sent out to kill. Keiji dies on the battlefield, only to be reborn each morning to fight and die again and again. On ...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1421527618"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781421527611"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 230,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 35,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yrYUvgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yrYUvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=yrYUvgAACAAJ&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=yrYUvgAACAAJ&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/All_You_Need_Is_Kill.html?hl=&id=yrYUvgAACAAJ"
+      },
+      "userInfo": {
+        "updated": "2021-07-29T19:23:26.475Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yrYUvgAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
