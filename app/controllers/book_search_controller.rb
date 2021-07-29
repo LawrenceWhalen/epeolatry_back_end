@@ -14,5 +14,4 @@ class BookSearchController < ApplicationController
     end
   end
 
-
 end

@@ -36,5 +36,13 @@ RSpec.describe 'book service' do
         end
       end
     end
+
+    describe '.book_shelves' do
+      it 'returns a list of all of a users bookshelves' do
+        actual = BookService.book_shelves
+
+        expect(actual.class).to eq(Array)
+      end
+    end
   end
 end
