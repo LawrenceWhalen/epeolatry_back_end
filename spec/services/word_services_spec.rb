@@ -10,3 +10,6 @@ RSpec.describe 'word services' do
     end
   end
 end
+
+
+# - link to pronunciation
