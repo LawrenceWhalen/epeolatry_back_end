@@ -1,23 +1,12 @@
 class WordFacade
 #make a helper method to dig into dataset
-  def self.define(searched_word)
+  def self.word_search(searched_word)
     result = WordService.search(searched_word)
 
-    definitions = result.first[:meanings].map do |meaning|
-      meaning[:definitions].map do |definition|
-        definition[:definition]
-      end
-    end.flatten
-    Word.new(definition: definitions)
-  end
-
-  def self.phonetic(searched_word)
-    result = WordService.search(searched_word)
-
-    Word.new(phonetic: result.first[:phonetics].first[:text])
+    Word.new(definition: result.first[:meanings].first[:definitions].first[:definition],
+             phonetic: result.first[:phonetics].first[:text],
+             part_of_speech: result.first[:meanings].first[:partOfSpeech],
+             synonyms: result.first[:meanings].first[:definitions].first[:synonym],
+             example: result.first[:meanings].first[:definitions].first[:example])
   end
 end
-
-
-
-# result.first[:meanings].first[:definitions].first[:definition]
