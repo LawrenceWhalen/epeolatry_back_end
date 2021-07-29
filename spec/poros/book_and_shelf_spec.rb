@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Book do
+RSpec.describe BookAndShelf do
   it 'has attributes' do
-    actual = BookPoro.new(g_id: '123', 
+    actual = BookAndShelf.new(g_id: '123', 
                           title: 'stinky cheese man', 
                           authors: ['Alex Smell', 'Wanda Feet'], 
                           description: 'A breathtaking book', 
