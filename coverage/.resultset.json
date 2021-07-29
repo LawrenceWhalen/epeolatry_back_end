@@ -46,50 +46,137 @@
       },
       "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/models/book.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          6,
+          6,
+          2,
+          null,
+          4,
+          40,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/book.rb": {
+        "lines": [
+          1,
+          null
+        ]
       },
       "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/word.rb": {
         "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          null
+        ]
       },
-      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/book.rb": {
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/services/book_service.rb": {
         "lines": [
-          0,
+          1,
           null,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          9,
+          null,
+          9,
+          null,
+          9,
+          9,
+          6,
+          null,
+          3,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          9,
+          9,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/poros/book_poro.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          41,
+          41,
+          41,
+          41,
+          41,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/controllers/book_search_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          3,
+          3,
+          3,
+          2,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       },
       "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/controllers/application_controller.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null,
+          1,
+          null,
+          1,
+          3,
+          2,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       },
+
       "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/services/book_service.rb": {
         "lines": [
-
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/epeolatry_back_end/app/models/word.rb": {
+        "lines": [
+          0,
+          0
         ],
         "branches": {
         }

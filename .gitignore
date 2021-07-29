@@ -25,4 +25,16 @@
 # Ignore application configuration
 /config/application.yml
 
+# Ignore simplecov to prevent merge errors
 /coverage/*
+
+# Ignore vcr setup to hide senstive data
+/spec/support/vcr.rb
+
+# Ignore vcr cassettes after setting them
+
+/spec/cassettes/no_match.yml
+/spec/cassettes/search_1.yml
+/spec/cassettes/search_2.yml
+/spec/cassettes/sparrow_1.yml
+/spec/cassettes/sparrow_2.yml
