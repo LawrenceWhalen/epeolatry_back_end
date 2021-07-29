@@ -52,6 +52,24 @@
         "branches": {
         }
       },
+      "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/word.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/alexferencz/turing/3_mod/projects/logosaur_back_end/app/poros/book.rb": {
         "lines": [
           0,
@@ -77,6 +95,6 @@
         }
       }
     },
-    "timestamp": 1627525147
+    "timestamp": 1627525573
   }
 }
