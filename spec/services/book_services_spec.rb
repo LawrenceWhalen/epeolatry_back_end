@@ -28,6 +28,13 @@ RSpec.describe 'book service' do
           expect(actual[0][:volumeInfo][:description].include?('A breathtaking tale')).to eq(true)
         end
       end
+      it 'returns an empty array if nothing matches the search' do
+        VCR.use_cassette 'no_match' do
+          actual = BookService.book_search('alsdfjllskfjlasdkjflask')
+
+          expect(actual.to eq([])
+        end
+      end
     end
   end
 end
