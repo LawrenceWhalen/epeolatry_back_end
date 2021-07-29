@@ -20,6 +20,13 @@ class BookService
     JSON.parse(body, symbolize_names: true)
   end
 
+  def self.books_on_shelf(shelf)
+    response = con.get "/books/v1/mylibrary/bookshelves/#{shelf}/volumes"
+
+    body = response.body
+    JSON.parse(body, symbolize_names: true)
+  end
+
   private
 
   def self.con
