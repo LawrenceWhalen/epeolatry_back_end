@@ -5,7 +5,12 @@ class BookService
 
     body = response.body
 
-    JSON.parse(body, symbolize_names: true)[:items]
+    search_result = JSON.parse(body, symbolize_names: true)
+    if search_result[:items]
+      search_result[:items]
+    else
+      []
+    end
   end
 
   private

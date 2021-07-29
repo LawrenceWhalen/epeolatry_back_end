@@ -29,6 +29,13 @@ RSpec.describe BookFacade do
           expect(actual[0].description.include?('A breathtaking tale')).to eq(true)
         end
       end
+      it 'returns an empty array if nothing matches the search' do
+        VCR.use_cassette 'no_match' do
+          actual = BookFacade.title_search('alsdfjllskfjlasdkjflask')
+
+          expect(actual).to eq([])
+        end
+      end
     end
   end
 end

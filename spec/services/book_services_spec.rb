@@ -32,7 +32,7 @@ RSpec.describe 'book service' do
         VCR.use_cassette 'no_match' do
           actual = BookService.book_search('alsdfjllskfjlasdkjflask')
 
-          expect(actual.to eq([])
+          expect(actual).to eq([])
         end
       end
     end
