@@ -8,5 +8,4 @@ class Word
     @synonyms = info[:part_of_speech]
     @example = info[:example]
   end
-
 end

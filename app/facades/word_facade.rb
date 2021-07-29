@@ -1,5 +1,4 @@
 class WordFacade
-#make a helper method to dig into dataset
   def self.word_search(searched_word)
     result = WordService.search(searched_word)
 
