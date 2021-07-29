@@ -10,7 +10,7 @@ class BookSearchController < ApplicationController
         render json: { data: [] }
       end
     else
-      render json: { error: 'No search field' }
+      render json: { error: 'No search sent' }
     end
   end
 
