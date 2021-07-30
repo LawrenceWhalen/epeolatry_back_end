@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en_US/caterwaul
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0
+      Date:
+      - Thu, 29 Jul 2021 22:04:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '941'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"3ad-azwwR1EnES7jXUtlQjpNtB77AU0"
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sid29yZCI6ImNhdGVyd2F1bCIsInBob25ldGljcyI6W3sidGV4dCI6Ii/LiGvDpmTJmXLLjHfJlGwvIiwiYXVkaW8iOiJodHRwczovL2xleC1hdWRpby51c2VyZW1hcmthYmxlLmNvbS9tcDMvY2F0ZXJ3YXVsX3VzXzEubXAzIn1dLCJtZWFuaW5ncyI6W3sicGFydE9mU3BlZWNoIjoiaW50cmFuc2l0aXZlIHZlcmIiLCJkZWZpbml0aW9ucyI6W3siZGVmaW5pdGlvbiI6Ik1ha2UgYSBzaHJpbGwgaG93bGluZyBvciB3YWlsaW5nIG5vaXNlIGxpa2UgdGhhdCBvZiBhIGNhdC4iLCJzeW5vbnltcyI6WyJob3dsIiwiaG93bGluZyIsIndhaWwiLCJ3YWlsaW5nIiwic2NyZWVjaCIsInNjcmVlY2hpbmciLCJzaHJpZWsiLCJzaHJpZWtpbmciLCJzY3JlYW0iLCJzY3JlYW1pbmciLCJiYXdsIiwiYmF3bGluZyIsImNyeSIsImNyeWluZyIsInllbGwiLCJ5ZWxsaW5nIiwieWVscCIsInllbHBpbmciLCJ5b3dsIiwieW93bGluZyIsInNxdWFsbCIsInNxdWFsbGluZyIsIndoaW5lIiwid2hpbmluZyIsInVsdWxhdGluZyJdLCJleGFtcGxlIjoiaGUgc2VlbXMgdG8gdGhpbmsgdGhhdCBzaW5naW5nIHNvdWxmdWxseSBpcyB0byB3aGluZSBhbmQgY2F0ZXJ3YXVsIHR1bmVsZXNzbHkifV19LHsicGFydE9mU3BlZWNoIjoibm91biIsImRlZmluaXRpb25zIjpbeyJkZWZpbml0aW9uIjoiQSBzaHJpbGwgaG93bGluZyBvciB3YWlsaW5nIG5vaXNlLiIsInN5bm9ueW1zIjpbInllbGwiLCJjcnkiLCJjYWxsIiwicm9hciIsImhvd2wiLCJiZWxsb3ciLCJiYXdsIiwiY2xhbW91ciIsImJheSIsImNoZWVyIiwieWF3cCIsInllbHAiLCJ3YWlsIiwic3F1YXdrIiwic2hyaWVrIiwic2NyZWFtIiwic2NyZWVjaCIsInNxdWVhbCIsInNxdWFsbCIsImNhdGVyd2F1bCIsIndob29wIl0sImV4YW1wbGUiOiJ0aGUgc29uZyBlbmRlZCBpbiBhIGNhdGVyd2F1bCBvZiBmZWVkYmFjayJ9XX1dfV0=
+  recorded_at: Thu, 29 Jul 2021 22:04:16 GMT
+recorded_with: VCR 6.0.0
