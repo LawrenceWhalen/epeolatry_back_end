@@ -42,14 +42,15 @@ RSpec.describe 'book service' do
 
     describe '.book_shelves' do
       it 'returns a list of all of a users bookshelves' do
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{ENV[:BOOK_KEY]}").
-         with(
+        key = Figaro.env.BOOK_KEY
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{key}").
+        with(
            headers: {
        	  'Accept'=>'*/*',
        	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
        	  'User-Agent'=>'Faraday v1.5.1'
            }).
-         to_return(status: 200, body: File.open('./spec/assets/book_shelves.json'), headers: {})
+         to_return(status: 200, body: File.open('./spec/assets/book_shelves.json').read, headers: {})
 
         VCR.turn_off!
           actual = BookService.book_shelves('auth_token')
@@ -63,14 +64,15 @@ RSpec.describe 'book service' do
     
     describe '.get_shelfs_books' do
       it 'returns all of the books off a users shelf' do
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{ENV[:BOOK_KEY]}").
+        key = Figaro.env.BOOK_KEY
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{key}").
          with(
            headers: {
        	  'Accept'=>'*/*',
        	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
        	  'User-Agent'=>'Faraday v1.5.1'
            }).
-         to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json'), headers: {})
+         to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json').read, headers: {})
 
         VCR.turn_off!
           actual = BookService.books_on_shelf(3, 'auth_token')
