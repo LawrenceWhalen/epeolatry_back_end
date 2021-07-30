@@ -43,15 +43,18 @@ RSpec.describe 'get: user/books' do
         to_return(status: 200, body: File.open('./spec/assets/to_read.json'), headers: {})
       end
       it 'returns a collection of BookAndShelf objects' do
-        get '/users/books'
+        get '/user/books'
 
         actual = JSON.parse(response.body, symbolize_names: true)[:data]
 
-        expect(actual).to eq(Array)
-        expect(actual[0][:title]).to_not eq(nil)
-        expect(actual[0][:g_id]).to_not eq(nil)
-        expect(actual[0][:authors]).to_not eq(nil)
-        expect(actual[0][:description]).to_not eq(nil)
-        expect(actual[0][:genres]).to_not eq(nil)
-        expect(actual[0][:shelves]).to_not eq(nil)
+        expect(actual.class).to eq(Array)
+        expect(actual[0][:attributes][:title]).to_not eq(nil)
+        expect(actual[0][:id]).to_not eq(nil)
+        expect(actual[0][:attributes][:authors]).to_not eq(nil)
+        expect(actual[0][:attributes][:description]).to_not eq(nil)
+        expect(actual[0][:attributes][:genres]).to_not eq(nil)
+        expect(actual[0][:attributes][:shelves]).to_not eq(nil)
       end
+    end
+  end
+end
