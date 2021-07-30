@@ -13,4 +13,5 @@ class BookSearchController < ApplicationController
       render json: { error: 'No search sent' }
     end
   end
+  
 end

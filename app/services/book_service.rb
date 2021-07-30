@@ -13,11 +13,26 @@ class BookService
     end
   end
 
+  def self.book_shelves(auth_token)
+    response = con(auth_token).get "/books/v1/mylibrary/bookshelves"
+
+    body = response.body
+    JSON.parse(body, symbolize_names: true)
+  end
+
+  def self.books_on_shelf(shelf, auth_token)
+    response = con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf}/volumes"
+
+    body = response.body
+    JSON.parse(body, symbolize_names: true)
+  end
+
   private
 
-  def self.con
+  def self.con(auth_token = nil)
     Faraday.new(url: 'https://books.googleapis.com') do |faraday|
       faraday.params[:key] = Figaro.env.BOOK_KEY
+      faraday.headers[:Authorization] = "Bearer #{auth_token}"
     end
   end
 end

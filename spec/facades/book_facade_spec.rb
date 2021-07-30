@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe BookFacade do
+  before :each do
+    VCR.turn_on!
+  end
   describe 'class methods' do
     describe 'title_search' do
       it 'returns 10 books by title' do

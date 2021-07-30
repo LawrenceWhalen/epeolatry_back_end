@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'word services' do
   it 'can find english(US) words' do
+    VCR.turn_on!
     VCR.use_cassette 'word search' do
       result = WordService.search('caterwaul')
       expect(result.first[:word]).to eq('caterwaul')
