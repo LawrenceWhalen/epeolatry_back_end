@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'word facade' do
+  before :each do
+    VCR.turn_on!
+  end
   it 'can find a definition' do
     VCR.use_cassette 'word search' do
       result = WordFacade.word_search('caterwaul')

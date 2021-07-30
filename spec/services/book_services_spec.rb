@@ -2,6 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'book service' do
   describe 'class methods' do
+    before :each do
+      VCR.turn_on!
+    end
     describe '.book_search' do
       it 'returns a list of books that match by title' do
         VCR.use_cassette 'sparrow_1' do
