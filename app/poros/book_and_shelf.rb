@@ -5,6 +5,8 @@ class BookAndShelf
               :genres,
               :g_id,
               :shelves
+  
+  attr_writer :shelves
 
   def initialize(attributes)
     @g_id = attributes[:g_id]

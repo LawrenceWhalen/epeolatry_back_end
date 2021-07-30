@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe UserBooksFacade do
-  describe 'class_methods' do
-    describe '.all_books' do
+RSpec.describe 'get: user/books' do
+  describe 'controller index action' do
+    describe 'return value' do
       before :each do
         VCR.turn_off!
         key = Figaro.env.BOOK_KEY
@@ -42,13 +42,18 @@ RSpec.describe UserBooksFacade do
           }).
         to_return(status: 200, body: File.open('./spec/assets/to_read.json'), headers: {})
       end
-      it 'retrieves all a users books and creates book and shelf objects' do
-        
-        actual = UserBooksFacade.all_books('auth_token')
+      it 'returns a collection of BookAndShelf objects' do
+        get '/user/books'
 
+        actual = JSON.parse(response.body, symbolize_names: true)[:data]
 
         expect(actual.class).to eq(Array)
-        expect(actual[0].class).to eq(BookAndShelf)
+        expect(actual[0][:attributes][:title]).to_not eq(nil)
+        expect(actual[0][:id]).to_not eq(nil)
+        expect(actual[0][:attributes][:authors]).to_not eq(nil)
+        expect(actual[0][:attributes][:description]).to_not eq(nil)
+        expect(actual[0][:attributes][:genres]).to_not eq(nil)
+        expect(actual[0][:attributes][:shelves]).to_not eq(nil)
       end
     end
   end
