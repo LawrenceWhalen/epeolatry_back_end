@@ -42,11 +42,11 @@ RSpec.describe UserBooksFacade do
           }).
         to_return(status: 200, body: File.open('./spec/assets/to_read.json'), headers: {})
       end
-      xit 'retrieves all a users books and creates book and shelf objects' do
+      it 'retrieves all a users books and creates book and shelf objects' do
         
         actual = UserBooksFacade.all_books('auth_token')
-        VCR.turn_on!
-        binding.pry
+
+
         expect(actual.class).to eq(Array)
         expect(actual[0].class).to eq(BookAndShelf)
       end
