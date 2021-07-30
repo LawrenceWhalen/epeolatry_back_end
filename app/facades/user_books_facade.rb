@@ -16,18 +16,17 @@ class UserBooksFacade
           authors: book[:volumeInfo][:authors],
           description: book[:volumeInfo][:description],
           genres: book[:volumeInfo][:categories],
-          shelves: shelf[:title]
+          shelves: [shelf[:title]]
         )
       end if contents
-    end
-    test = all_books.flatten.each_with_object({}) do |book, hash|
+    end.flatten
+    all_books.compact.each_with_object({}) do |book, hash|
       if hash[book.g_id]
-        hash[book.g_id].shelves.merge!(book.shelves)
+        hash[book.g_id].shelves += book.shelves
       else
         hash[book.g_id] = book
       end
-    end
-    binding.pry
+    end.values
   end
 
 end
