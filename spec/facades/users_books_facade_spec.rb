@@ -5,7 +5,8 @@ RSpec.describe UserBooksFacade do
     describe '.all_books' do
       before :each do
         VCR.turn_off!
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{Figaro.env.BOOK_KEY}").
+        key = Figaro.env.BOOK_KEY
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{key}").
          with(
            headers: {
        	  'Accept'=>'*/*',
@@ -14,7 +15,7 @@ RSpec.describe UserBooksFacade do
            }).
           to_return(status: 200, body: File.open('./spec/assets/book_shelves.json'), headers: {})
 
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{Figaro.env.BOOK_KEY}").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{key}").
         with(
           headers: {
         'Accept'=>'*/*',
@@ -23,7 +24,7 @@ RSpec.describe UserBooksFacade do
           }).
         to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json'), headers: {})
 
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/2/volumes?key=#{Figaro.env.BOOK_KEY}").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/2/volumes?key=#{key}").
         with(
           headers: {
           'Accept'=>'*/*',
@@ -32,7 +33,7 @@ RSpec.describe UserBooksFacade do
           }).
           to_return(status: 200, body: File.open('./spec/assets/have_read.json'), headers: {})
 
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/4/volumes?key=#{Figaro.env.BOOK_KEY}").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/4/volumes?key=#{key}").
         with(
           headers: {
           'Accept'=>'*/*',
