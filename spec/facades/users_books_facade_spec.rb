@@ -4,7 +4,7 @@ RSpec.describe UserBooksFacade do
   describe 'class_methods' do
     describe '.all_books' do
       before :each do
-        VCR.off!
+        VCR.turn_off!
         stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{Figaro.env.BOOK_KEY}").
          with(
            headers: {
