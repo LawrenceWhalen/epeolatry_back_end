@@ -42,7 +42,7 @@ RSpec.describe 'book service' do
 
     describe '.book_shelves' do
       it 'returns a list of all of a users bookshelves' do
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{Figaro.env.BOOK_KEY}").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{ENV[:BOOK_KEY]}").
          with(
            headers: {
        	  'Accept'=>'*/*',
@@ -63,7 +63,7 @@ RSpec.describe 'book service' do
     
     describe '.get_shelfs_books' do
       it 'returns all of the books off a users shelf' do
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{Figaro.env.BOOK_KEY}").
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{ENV[:BOOK_KEY]}").
          with(
            headers: {
        	  'Accept'=>'*/*',
