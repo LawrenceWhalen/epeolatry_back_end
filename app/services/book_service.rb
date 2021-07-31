@@ -33,10 +33,7 @@ class BookService
               end
     shelf_id = shelf[:id]
 
-    response = con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
-
-    body = response.body
-    JSON.parse(body, symbolize_names: true)
+    con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
   end
 
   private
