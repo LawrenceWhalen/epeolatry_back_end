@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_30_234733) do
+ActiveRecord::Schema.define(version: 2021_07_31_000743) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "vocabularies", force: :cascade do |t|
+  create_table "glossaries", force: :cascade do |t|
     t.integer "book_id"
     t.integer "user_id"
     t.bigint "word_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["word_id"], name: "index_vocabularies_on_word_id"
+    t.index ["word_id"], name: "index_glossaries_on_word_id"
   end
 
   create_table "words", force: :cascade do |t|
@@ -36,5 +36,5 @@ ActiveRecord::Schema.define(version: 2021_07_30_234733) do
     t.string "phonetic_link"
   end
 
-  add_foreign_key "vocabularies", "words"
+  add_foreign_key "glossaries", "words"
 end
