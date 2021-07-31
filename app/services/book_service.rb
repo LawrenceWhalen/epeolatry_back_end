@@ -33,7 +33,11 @@ class BookService
               end
     shelf_id = shelf[:id]
 
-    con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
+    conn(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
+  end
+
+  def self.remove_book(shelf_id, volume_id, auth_token)
+    conn(auth_token).post "/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?volumeId=#{volume_id}"
   end
 
   private
