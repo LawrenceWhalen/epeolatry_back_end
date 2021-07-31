@@ -2,6 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'get: /books/search' do
   describe 'requesting a search' do
+    before :each do
+      VCR.turn_on!
+    end
     it 'returns 10 books' do
       VCR.use_cassette 'search_1' do
         get '/books/search?search=sparrow'

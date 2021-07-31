@@ -2,6 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'book service' do
   describe 'class methods' do
+    before :each do
+      VCR.turn_on!
+    end
+
     describe '.book_search' do
       it 'returns a list of books that match by title' do
         VCR.use_cassette 'sparrow_1' do
@@ -34,6 +38,63 @@ RSpec.describe 'book service' do
 
           expect(actual).to eq([])
         end
+      end
+    end
+
+    describe '.book_shelves' do
+      it 'returns a list of all of a users bookshelves' do
+        key = Figaro.env.BOOK_KEY
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{key}").
+        with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v1.5.1'
+           }).
+         to_return(status: 200, body: File.open('./spec/assets/book_shelves.json').read, headers: {})
+
+        VCR.turn_off!
+          actual = BookService.book_shelves('auth_token')
+        VCR.turn_on!
+
+        expect(actual.class).to eq(Hash)
+        expect(actual[:items][0][:id]).to eq(7)
+        expect(actual[:items][1][:id]).to eq(1)
+      end
+    end
+
+    describe '.books_on_shelf' do
+      it 'returns all of the books off a users shelf' do
+        key = Figaro.env.BOOK_KEY
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{key}").
+         with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v1.5.1'
+           }).
+         to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json').read, headers: {})
+
+        VCR.turn_off!
+          actual = BookService.books_on_shelf(3, 'auth_token')
+        VCR.turn_on!
+
+        expect(actual.class).to eq(Hash)
+        expect(actual[:items][0][:id]).to eq('PCcOMbEydAIC')
+        expect(actual[:items][1][:id]).to eq('ZrNzAwAAQBAJ')
+      end
+    end
+
+    describe '.add_book' do
+      xit 'adds a book to the shelf of a user' do
+        # how to test this functionality while mocking?
+
+        # volume_id = 'm8dPPgAACAAJ'
+        #
+        # VCR.turn_off!
+        #   actual = BookService.add_book(volume_id, 'auth_token')
+        # VCR.turn_on!
+
       end
     end
   end
