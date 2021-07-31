@@ -27,6 +27,18 @@ class BookService
     JSON.parse(body, symbolize_names: true)
   end
 
+  def self.add_book(volume_id, auth_token)
+    shelf =  BookService.book_shelves(auth_token)[:items].find do |shelf|
+                shelf[:title] == "To read"
+              end
+    shelf_id = shelf[:id]
+
+    response = con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
+
+    body = response.body
+    JSON.parse(body, symbolize_names: true)
+  end
+
   private
 
   def self.con(auth_token = nil)

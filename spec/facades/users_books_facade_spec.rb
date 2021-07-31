@@ -51,9 +51,17 @@ RSpec.describe UserBooksFacade do
       end
     end
 
-    describe '.create' do
-      xit '.create adds a book to the user\'s library' do
-        # UserBooksFacade
+    describe '.add_book' do
+      xit '.add_book adds a book to the user\'s library' do
+        # how to test this functionality while mocking?
+        initial_count = UserBooksFacade.all_books('auth_token').length
+
+        volume_id = 'm8dPPgAACAAJ'
+        UserBooksFacade.add_book(volume_id, 'auth_token')
+
+        final_count = UserBooksFacade.all_books('auth_token').length
+
+        expect(final_count - initial_count).to eq(1)
       end
     end
   end

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get '/user/books', to: 'user_books#index'
   get '/words/search', to: 'words#search'
 
-  # post '/user/books', to: 'user_books#create'
+  post '/user/books', to: 'user_books#create'
   # delete '/user/books/:id', to: 'user_books#destroy'
 end
