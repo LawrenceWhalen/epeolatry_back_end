@@ -6,7 +6,7 @@ class WordFacade
              phonetic: result.first[:phonetics].first[:text],
              phonetic_link: result.first[:phonetics].first[:audio],
              part_of_speech: result.first[:meanings].first[:partOfSpeech],
-             synonyms: result.first[:meanings].first[:definitions].first[:synonym],
+             synonyms: result.first[:meanings].first[:definitions].first[:synonyms],
              example: result.first[:meanings].first[:definitions].first[:example])
   end
 end
