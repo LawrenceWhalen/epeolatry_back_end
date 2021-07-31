@@ -1,7 +1,7 @@
 class BookService
 
   def self.book_search(search, index = 0)
-    response = con.get "/books/v1/volumes?q=#{search}&maxResults=10&orderBy=relevance&startIndex=#{index}"
+    response = conn.get "/books/v1/volumes?q=#{search}&maxResults=10&orderBy=relevance&startIndex=#{index}"
 
     body = response.body
 
@@ -14,14 +14,14 @@ class BookService
   end
 
   def self.book_shelves(auth_token)
-    response = con(auth_token).get "/books/v1/mylibrary/bookshelves"
+    response = conn(auth_token).get "/books/v1/mylibrary/bookshelves"
 
     body = response.body
     JSON.parse(body, symbolize_names: true)
   end
 
   def self.books_on_shelf(shelf, auth_token)
-    response = con(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf}/volumes"
+    response = conn(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf}/volumes"
 
     body = response.body
     JSON.parse(body, symbolize_names: true)
@@ -29,7 +29,7 @@ class BookService
 
   private
 
-  def self.con(auth_token = nil)
+  def self.conn(auth_token = nil)
     Faraday.new(url: 'https://books.googleapis.com') do |faraday|
       faraday.params[:key] = Figaro.env.BOOK_KEY
       faraday.headers[:Authorization] = "Bearer #{auth_token}"
