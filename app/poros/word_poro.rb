@@ -1,4 +1,4 @@
-class Word
+class WordPoro
   attr_reader :word,
               :definition,
               :phonetic,
@@ -13,7 +13,7 @@ class Word
     @phonetic = info[:phonetic]
     @phonetic_link = info[:phonetic_link]
     @part_of_speech = info[:part_of_speech]
-    @synonyms = info[:part_of_speech]
+    @synonyms = info[:synonyms]
     @example = info[:example]
   end
 end

@@ -29,4 +29,8 @@ class UserBooksFacade
     end.values
   end
 
+  def self.add_book(volume_id, auth_token)
+    BookService.add_book(volume_id, auth_token)
+  end
+
 end

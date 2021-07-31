@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'word poro' do
   it 'has attributes' do
-    fake_word = Word.new(word: 'fake word', definition: "lies", phonetic: 'weird letters', phonetic_link: "https//website.sound_out", part_of_speech: 'noun because thats easy', synonyms: 'lauren boebert', example: 'why is this fake word in this test?')
+    fake_word = WordPoro.new(word: 'fake word', definition: "lies", phonetic: 'weird letters', phonetic_link: "https//website.sound_out", part_of_speech: 'noun because thats easy', synonyms: 'lauren boebert', example: 'why is this fake word in this test?')
 
     expect(fake_word.word).to eq("fake word")
     expect(fake_word.definition).to eq("lies")
