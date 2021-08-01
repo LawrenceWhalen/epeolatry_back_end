@@ -1,4 +1,4 @@
-class UserBooksController < ApplicationController
+class Api::V1::User::BooksController < ApplicationController
 
   def index
     books = UserBooksFacade.all_books(params[:auth_token])   # needs a user id and a filter_by(can be default nothing) in the params
@@ -14,5 +14,5 @@ class UserBooksController < ApplicationController
   def destroy
     UserBooksFacade.remove_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
-  
+
 end
