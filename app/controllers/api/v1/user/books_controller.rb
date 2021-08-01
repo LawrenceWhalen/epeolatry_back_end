@@ -14,5 +14,4 @@ class Api::V1::User::BooksController < ApplicationController
   def destroy
     UserBooksFacade.remove_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
-
 end
