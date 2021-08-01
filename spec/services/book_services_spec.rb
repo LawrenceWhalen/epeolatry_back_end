@@ -99,28 +99,27 @@ RSpec.describe 'book service' do
     end
 
     describe '.remove_book' do
-      xit 'can remove a book from a users shelf' do
+      it 'can remove a book from a users shelf' do
         shelf_id = 4
         key = Figaro.env.BOOK_KEY
         volume_id = "inYs79gV4UQC"
 
-        stub_request(:post, "https://www.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?key=#{key}&volumeId=#{volume_id}").
+        stub_request(:post, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?key=#{key}&volumeId=#{volume_id}").
          with(
            headers: {
        	  'Accept'=>'*/*',
        	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
        	  'Authorization'=>'Bearer auth_token',
        	  'User-Agent'=>'Faraday v1.5.1'
-           })
-        to_return(status: 200, body: File.open('./spec/assets/have_read.json').read, headers: {})
+           }).
+        to_return(status: 200, body: '{}', headers: {})
 
         VCR.turn_off!
           actual = BookService.remove_book(shelf_id, volume_id, 'auth_token')
         VCR.turn_on!
 
-        expect(actual).to be_successful
-
-        to_return(status: 204, body: File.open('./spec/assets/have_read_minus_one.json').read, headers: {})
+        expect(actual.status).to eq(200)
+        expect(actual.body).to eq("{}")
       end
     end
   end
