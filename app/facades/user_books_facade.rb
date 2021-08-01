@@ -29,12 +29,7 @@ class UserBooksFacade
     end.values
   end
 
-  def self.add_book(volume_id, auth_token)
-    BookService.add_book(volume_id, auth_token)
+  def self.add_book(shelf_id, volume_id, auth_token)
+    BookService.add_book(shelf_id, volume_id, auth_token)
   end
-
-  def self.remove_a_book
-    BookService.remove_book(shelf_id, volume_id, auth_token)
-  end
-
 end
