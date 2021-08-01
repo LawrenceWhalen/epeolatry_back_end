@@ -33,4 +33,8 @@ class UserBooksFacade
     BookService.add_book(volume_id, auth_token)
   end
 
+  def self.remove_a_book
+    BookService.remove_book(shelf_id, volume_id, auth_token)
+  end
+
 end
