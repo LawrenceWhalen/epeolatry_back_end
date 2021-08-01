@@ -12,6 +12,7 @@ class UserBooksController < ApplicationController
   end
 
   def destroy
-    BookService.remove_book(shelf_id, volume_id, auth_token)
+    UserBooksFacade.remove_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
+  
 end
