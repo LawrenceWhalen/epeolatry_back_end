@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'get: user/books' do
+RSpec.describe 'Books Request' do
   before :each do
     VCR.turn_off!
     key = Figaro.env.BOOK_KEY
@@ -44,7 +44,7 @@ RSpec.describe 'get: user/books' do
   describe 'controller index action' do
     describe 'return value' do
       it 'returns a collection of BookAndShelf objects' do
-        get '/user/books'
+        get '/api/v1/user/books'
 
         actual = JSON.parse(response.body, symbolize_names: true)[:data]
 
@@ -62,12 +62,12 @@ RSpec.describe 'get: user/books' do
   describe 'controller create action' do
     xit '#create adds a book to a library' do
       # how to test this functionality while mocking?
-      get '/user/books'
+      get '/api/v1/user/books'
       initial_count = JSON.parse(response.body, symbolize_names: true)[:data].length
 
       volume_id = 'm8dPPgAACAAJ'
-      post "/user/books?volume_id=#{volume_id}"
-      get '/user/books'
+      post "/api/v1/user/books?volume_id=#{volume_id}"
+      get '//api/v1/user/books'
 
       final_count = JSON.parse(response.body, symbolize_names: true)[:data].length
 

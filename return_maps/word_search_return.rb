@@ -1,4 +1,4 @@
-'https://epeolatry-back-end.herokuapp.com/words/search'
+'https://epeolatry-back-end.herokuapp.com/api/v1/word/search'
   params[:word] = <'word you want to search example - caterwaul'>
 
 {:data=>
