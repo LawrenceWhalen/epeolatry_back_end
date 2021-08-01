@@ -1,4 +1,4 @@
-get: 'https://epeolatry-back-end.herokuapp.com/user/books' 
+get: 'https://epeolatry-back-end.herokuapp.com/api/v1/user/books' 
     params: { auth_token: 'the users auth_token from google' }
 
 [{:id=>"PCcOMbEydAIC",

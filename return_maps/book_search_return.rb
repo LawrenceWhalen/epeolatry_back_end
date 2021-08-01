@@ -1,4 +1,4 @@
-get: 'https://epeolatry-back-end.herokuapp.com/books/search' 
+get: 'https://epeolatry-back-end.herokuapp.com/api/v1/book/search' 
     params: { search: 'search words', page: 'which page of returns, defaults to first page if not passed' }
 
 {:data=>
