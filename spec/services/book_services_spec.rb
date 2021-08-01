@@ -86,15 +86,52 @@ RSpec.describe 'book service' do
     end
 
     describe '.add_book' do
-      xit 'adds a book to the shelf of a user' do
-        # how to test this functionality while mocking?
+      it 'adds a book to the shelf of a user' do
+        shelf_id = 4
+        key = Figaro.env.BOOK_KEY
+        volume_id = 'm8dPPgAACAAJ'
 
-        # volume_id = 'm8dPPgAACAAJ'
-        #
-        # VCR.turn_off!
-        #   actual = BookService.add_book(volume_id, 'auth_token')
-        # VCR.turn_on!
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?key=#{key}&volumeId=#{volume_id}").
+          with(
+            headers: {
+        	  'Accept'=>'*/*',
+        	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+        	  'Authorization'=>'Bearer auth_token',
+        	  'User-Agent'=>'Faraday v1.5.1'
+            }).
+          to_return(status: 200, body: "{}", headers: {})
 
+        VCR.turn_off!
+          actual = BookService.add_book(shelf_id, volume_id, 'auth_token')
+        VCR.turn_on!
+
+        expect(actual.status).to eq(200)
+        expect(actual.body).to eq("{}")
+      end
+    end
+
+    describe '.remove_book' do
+      it 'can remove a book from a users shelf' do
+        shelf_id = 4
+        key = Figaro.env.BOOK_KEY
+        volume_id = "inYs79gV4UQC"
+
+        stub_request(:post, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?key=#{key}&volumeId=#{volume_id}").
+          with(
+            headers: {
+         	  'Accept'=>'*/*',
+         	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+         	  'Authorization'=>'Bearer auth_token',
+         	  'User-Agent'=>'Faraday v1.5.1'
+            }).
+        to_return(status: 200, body: '{}', headers: {})
+
+        VCR.turn_off!
+          actual = BookService.remove_book(shelf_id, volume_id, 'auth_token')
+        VCR.turn_on!
+
+        expect(actual.status).to eq(200)
+        expect(actual.body).to eq("{}")
       end
     end
   end

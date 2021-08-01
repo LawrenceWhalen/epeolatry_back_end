@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/words/search', to: 'words#search'
 
   post '/user/books', to: 'user_books#create'
-  # delete '/user/books/:id', to: 'user_books#destroy'
+  delete '/user/books/:id', to: 'user_books#destroy'
 end
