@@ -1,0 +1,4 @@
+class UserWordFacade
+
+  
+end
