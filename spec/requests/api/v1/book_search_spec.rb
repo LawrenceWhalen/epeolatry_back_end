@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe 'get: /books/search' do
+RSpec.describe 'Book Search' do
   describe 'requesting a search' do
     before :each do
       VCR.turn_on!
     end
     it 'returns 10 books' do
       VCR.use_cassette 'search_1' do
-        get '/books/search?search=sparrow'
+        get '/api/v1/book/search?search=sparrow'
 
         actual = JSON.parse(response.body, symbolize_names: true)
 
@@ -21,7 +21,7 @@ RSpec.describe 'get: /books/search' do
     end
     it 'returns the next ten books if a page is sent' do
       VCR.use_cassette 'search_2' do
-        get '/books/search?search=sparrow&page=2'
+        get '/api/v1/book/search?search=sparrow&page=2'
 
         actual = JSON.parse(response.body, symbolize_names: true)
 
@@ -35,7 +35,7 @@ RSpec.describe 'get: /books/search' do
     end
     it 'returns an empty array if there are no matches' do
       VCR.use_cassette 'no_match' do
-        get '/books/search?search=alsdfjllskfjlasdkjflask'
+        get '/api/v1/book/search?search=alsdfjllskfjlasdkjflask'
 
         actual = JSON.parse(response.body, symbolize_names: true)
 
@@ -44,7 +44,7 @@ RSpec.describe 'get: /books/search' do
     end
     it 'returns an error if no search is provided' do
       VCR.use_cassette 'no_match' do
-        get '/books/search'
+        get '/api/v1/book/search'
 
         actual = JSON.parse(response.body, symbolize_names: true)
 
