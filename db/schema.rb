@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_31_000743) do
+ActiveRecord::Schema.define(version: 2021_08_01_201706) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "glossaries", force: :cascade do |t|
-    t.integer "book_id"
+    t.string "book_id"
     t.integer "user_id"
     t.bigint "word_id"
     t.datetime "created_at", null: false
