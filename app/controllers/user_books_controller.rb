@@ -8,11 +8,11 @@ class UserBooksController < ApplicationController
   end
 
   def create
-    UserBooksFacade.add_book(params[:volume_id], params[:auth_token])
+    UserBooksFacade.add_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
 
   def destroy
-    UserBooksFacade.remove_book(params[:shelf_id], params[:volume_id], params[:auth_token])
+    BookService.remove_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
-  
+
 end
