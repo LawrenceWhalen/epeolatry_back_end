@@ -29,7 +29,7 @@ RSpec.describe 'Words Request' do
 
     new_word = Word.last
 
-    expect(response).to be_successful
+    expect(response.status).to eq(201)
     expect(new_word.word).to eq(word_content)
     expect(Glossary.where('word_id = ? AND book_id = ? AND user_id = ?', new_word.id, book_id, user_id).exists?).to eq(true)
   end
