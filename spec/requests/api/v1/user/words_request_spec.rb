@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Words Request' do
-  it 'can get all of a user\'s words' do
+
+  it '#index can get all of a user\'s words' do
     sample_user_id = 1234
     sample_user_id_2 = 5678
 
@@ -25,7 +26,7 @@ RSpec.describe 'Words Request' do
     expect(words.count).to eq(10)
   end
 
-  it 'can add a word to a user/book combo' do
+  it '#create can add a word to a user/book combo' do
     word_content = 'test'
     response_body = File.read('spec/fixtures/word_search.json')
     stub_request(:get, "https://api.dictionaryapi.dev/api/v2/entries/en_US/#{word_content}").
@@ -50,5 +51,26 @@ RSpec.describe 'Words Request' do
     expect(new_word.glossaries.last.book_id).to eq(book_id)
     expect(new_word.glossaries.last.user_id).to eq(user_id)
     expect(Glossary.where('word_id = ? AND book_id = ? AND user_id = ?', new_word.id, book_id, user_id).exists?).to eq(true)
+  end
+
+  it '#show can return a words details and the books the word is associated with' do
+    sample_user_id = 1234
+    sample_book_id_1 = 'm8dPPgAACAAJ'
+    sample_book_id_2 = 'JhgWAQAAMAAJ'
+
+    5.times do
+      create(:word) do |word|
+        create(:glossary, user_id: sample_user_id, word_id: word.id, book_id: sample_book_id_1)
+        create(:glossary, user_id: sample_user_id, word_id: word.id, book_id: sample_book_id_2)
+      end
+    end
+
+    sample_word = Word.last
+
+    get "/api/v1/user/words/#{sample_word.id}"
+    word_details = JSON.parse(response.body, symbolize_names: true)
+
+    expect(word_details.first.books.id).to eq(sample_book_id_1)
+    expect(word_details.second.books.id).to eq(sample_book_id_2)
   end
 end
