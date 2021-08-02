@@ -28,11 +28,7 @@ class BookService
   end
 
   def self.add_book(shelf_id, volume_id, auth_token)
-    # shelf =  BookService.book_shelves(auth_token)[:items].find do |shelf|
-    #             shelf[:title] == "To read"
-    #           end
-    # shelf_id = shelf[:id]
-    conn(auth_token).get "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
+    response = conn(auth_token).post "/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}"
   end
 
   def self.remove_book(shelf_id, volume_id, auth_token)
@@ -43,8 +39,10 @@ class BookService
 
   def self.conn(auth_token = nil)
     Faraday.new(url: 'https://books.googleapis.com') do |faraday|
-      faraday.params[:api_key] = ENV['BOOK_KEY']
       faraday.headers[:Authorization] = "Bearer #{auth_token}"
+      # faraday.params[:key] = ENV['BOOK_KEY']
+        # 8/2/21 - not sure why, but this breaks functionality in development.
+        # All calls work without it - to revisit if needed.
     end
   end
 end
