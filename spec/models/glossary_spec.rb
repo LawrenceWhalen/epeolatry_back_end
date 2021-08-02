@@ -28,8 +28,8 @@ RSpec.describe Glossary, type: :model do
         user_1_words = Glossary.users_words(sample_user_id)
         user_2_words = Glossary.users_words(sample_user_id_2)
 
-        expect(user_1_words.length).to eq(10)
-        expect(user_1_words.length).to eq(15)
+        expect(user_1_words.length).to eq(20)
+        expect(user_2_words.length).to eq(15)
       end
     end
   end

@@ -1,6 +1,6 @@
 class Api::V1::User::WordsController < ApplicationController
   def index
-    word_ids = Glossary.where('user_id = ?', params[:user_id]).pluck(:word_id)
+    word_ids = Glossary.users_words(params[:user_id])
     words = Word.find(word_ids)
     render json: WordSerializer.new(words)
   end
