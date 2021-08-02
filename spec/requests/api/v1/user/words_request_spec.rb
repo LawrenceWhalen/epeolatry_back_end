@@ -70,6 +70,8 @@ RSpec.describe 'Words Request' do
     get "/api/v1/user/words/#{sample_word.id}"
     word_details = JSON.parse(response.body, symbolize_names: true)
 
+    #Need to stub out responses for volume lookup
+
     expect(word_details.first.books.id).to eq(sample_book_id_1)
     expect(word_details.second.books.id).to eq(sample_book_id_2)
   end
