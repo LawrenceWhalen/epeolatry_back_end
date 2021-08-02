@@ -1,12 +1,28 @@
 require 'rails_helper'
 
 RSpec.describe 'Words Request' do
-  xit 'can show all of a user\'s words' do
-    get api_v1_user_words_path
+  it 'can get all of a user\'s words' do
+    sample_user_id = 1234
+    sample_user_id_2 = 5678
 
-    words = JSON.parse(response.body, symbolize_names: true)
+    10.times do
+      create(:word) do |word|
+        create(:glossary, user_id: sample_user_id, word_id: word.id)
+        create(:glossary, user_id: sample_user_id, word_id: word.id)
+        create(:glossary, user_id: sample_user_id_2, word_id: word.id)
+      end
+    end
 
+    5.times do
+      create(:word) do |word|
+        create(:glossary, user_id: sample_user_id_2, word_id: word.id)
+      end
+    end
 
+    get "/api/v1/user/words?user_id=#{sample_user_id}"
+    words = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(words.count).to eq(10)
   end
 
   it 'can add a word to a user/book combo' do

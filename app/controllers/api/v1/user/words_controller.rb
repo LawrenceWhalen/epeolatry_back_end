@@ -1,14 +1,8 @@
 class Api::V1::User::WordsController < ApplicationController
   def index
-
-  end
-
-  def show
-
-  end
-
-  def new
-
+    word_ids = Glossary.users_words(params[:user_id])
+    words = Word.find(word_ids)
+    render json: WordSerializer.new(words)
   end
 
   def create
@@ -20,18 +14,6 @@ class Api::V1::User::WordsController < ApplicationController
     else
       render json: { response: 'Not Found' }, status: :not_found
     end
-  end
-
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def destroy
-
   end
 
   #private
