@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       get '/book/search', to: 'book_search#index'
       get '/word/search', to: 'word_search#index'
       namespace :user do
-        resources :books, only: [:index, :create, :delete]
+        resources :books, only: [:index, :create, :destroy]
         resources :words, only: [:index, :create, :show]
       end
     end
