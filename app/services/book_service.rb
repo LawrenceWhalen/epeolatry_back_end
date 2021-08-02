@@ -43,7 +43,7 @@ class BookService
 
   def self.conn(auth_token = nil)
     Faraday.new(url: 'https://books.googleapis.com') do |faraday|
-      faraday.params[:key] = Figaro.env.BOOK_KEY
+      faraday.params[:key] = ENV[:BOOK_KEY]
       faraday.headers[:Authorization] = "Bearer #{auth_token}"
     end
   end
