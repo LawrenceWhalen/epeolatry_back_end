@@ -18,13 +18,14 @@ class Api::V1::User::WordsController < ApplicationController
 
   def show
     word = Word.find(params[:id])
-    books = Glossary.where('word_id = ?', word.id).pluck(:book_id)
+    books = Glossary.where('word_id = ?', word.id).pluck(:book_id) #need to also add user_id, passed as a param
     books.map do |book|
       # create a method in the bookservice to lookup the volume, grab title and id
       # BookService.volume_lookup (https://www.googleapis.com/books/v1/volumes/volumeId)
+      # make book POROS
     end
 
-    #serialize a word object with an attribute that is an array of hashes for books associated (id: title)
+    # serialize a word object with an attribute that is an array of book objects?
 
     # binding.pry
   end
