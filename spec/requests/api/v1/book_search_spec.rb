@@ -26,11 +26,11 @@ RSpec.describe 'Book Search' do
         actual = JSON.parse(response.body, symbolize_names: true)
 
         expect(actual[:data].length).to eq(10)
-        expect(actual[:data][0][:id]).to eq('Q4BzBgAAQBAJ')
-        expect(actual[:data][0][:attributes][:title]).to eq('The Wren and the Sparrow')
-        expect(actual[:data][0][:attributes][:authors][0]).to eq('J. Patrick Lewis')
-        expect(actual[:data][0][:attributes][:genres][0]).to eq('Juvenile Fiction')
-        expect(actual[:data][0][:attributes][:description].include?('An allegorical tale')).to eq(true)
+        expect(actual[:data][0][:id]).to eq('LTXZgvsxvtsC')
+        expect(actual[:data][0][:attributes][:title]).to eq('Children of God')
+        expect(actual[:data][0][:attributes][:authors][0]).to eq('Mary Doria Russell')
+        expect(actual[:data][0][:attributes][:genres][0]).to eq('Fiction')
+        expect(actual[:data][0][:attributes][:description].include?('In Children of God, Mary')).to eq(true)
       end
     end
     it 'returns an empty array if there are no matches' do
