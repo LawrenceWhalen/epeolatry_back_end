@@ -25,11 +25,17 @@ RSpec.describe BookFacade do
 
           expect(actual.length).to eq(10)
           expect(actual[0].class).to eq(BookPoro)
-          expect(actual[0].g_id).to eq('MRm8DwAAQBAJ')
-          expect(actual[0].title).to eq('Silver Sparrow')
-          expect(actual[0].authors).to eq(['Tayari Jones'])
+          # expect(actual[0].g_id).to eq('MRm8DwAAQBAJ')
+          # expect(actual[0].g_id).to eq('LTXZgvsxvtsC')
+          # expect(actual[0].title).to eq('Silver Sparrow')
+          # expect(actual[0].authors).to eq(['Tayari Jones'])
+          # expect(actual[0].genres).to eq(['Fiction'])
+          # expect(actual[0].description.include?('A breathtaking tale')).to eq(true)
+          expect(actual[0].g_id).to eq('LTXZgvsxvtsC')
+          expect(actual[0].title).to eq('Children of God')
+          expect(actual[0].authors).to eq(['Mary Doria Russell'])
           expect(actual[0].genres).to eq(['Fiction'])
-          expect(actual[0].description.include?('A breathtaking tale')).to eq(true)
+          expect(actual[0].description.include?('In Children of God, Mary')).to eq(true)
         end
       end
       it 'returns an empty array if nothing matches the search' do
