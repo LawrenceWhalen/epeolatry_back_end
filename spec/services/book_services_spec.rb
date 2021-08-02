@@ -25,13 +25,14 @@ RSpec.describe 'book service' do
           actual = BookService.book_search('sparrow', 10)
 
           expect(actual.length).to eq(10)
-          expect(actual[0][:id]).to eq('MRm8DwAAQBAJ')
-          expect(actual[0][:volumeInfo][:title]).to eq('Silver Sparrow')
-          expect(actual[0][:volumeInfo][:authors][0]).to eq('Tayari Jones')
+          expect(actual[0][:id]).to eq('LTXZgvsxvtsC')
+          expect(actual[0][:volumeInfo][:title]).to eq('Children of God')
+          expect(actual[0][:volumeInfo][:authors][0]).to eq('Mary Doria Russell')
           expect(actual[0][:volumeInfo][:categories][0]).to eq('Fiction')
-          expect(actual[0][:volumeInfo][:description].include?('A breathtaking tale')).to eq(true)
+          expect(actual[0][:volumeInfo][:description].include?('In Children of God, Mary')).to eq(true)
         end
       end
+
       it 'returns an empty array if nothing matches the search' do
         VCR.use_cassette 'no_match' do
           actual = BookService.book_search('alsdfjllskfjlasdkjflask')
@@ -43,15 +44,8 @@ RSpec.describe 'book service' do
 
     describe '.book_shelves' do
       it 'returns a list of all of a users bookshelves' do
-        key = Figaro.env.BOOK_KEY
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves?key=#{key}").
-        with(
-           headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v1.5.1'
-           }).
-         to_return(status: 200, body: File.open('./spec/assets/book_shelves.json').read, headers: {})
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves")
+          .to_return(status: 200, body: File.open('./spec/assets/book_shelves.json').read, headers: {})
 
         VCR.turn_off!
           actual = BookService.book_shelves('auth_token')
@@ -65,15 +59,8 @@ RSpec.describe 'book service' do
 
     describe '.books_on_shelf' do
       it 'returns all of the books off a users shelf' do
-        key = Figaro.env.BOOK_KEY
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes?key=#{key}").
-         with(
-           headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v1.5.1'
-           }).
-         to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json').read, headers: {})
+        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/3/volumes")
+          .to_return(status: 200, body: File.open('./spec/assets/books_on_shelf.json').read, headers: {})
 
         VCR.turn_off!
           actual = BookService.books_on_shelf(3, 'auth_token')
@@ -88,18 +75,10 @@ RSpec.describe 'book service' do
     describe '.add_book' do
       it 'adds a book to the shelf of a user' do
         shelf_id = 4
-        key = Figaro.env.BOOK_KEY
         volume_id = 'm8dPPgAACAAJ'
 
-        stub_request(:get, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?key=#{key}&volumeId=#{volume_id}").
-          with(
-            headers: {
-        	  'Accept'=>'*/*',
-        	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-        	  'Authorization'=>'Bearer auth_token',
-        	  'User-Agent'=>'Faraday v1.5.1'
-            }).
-          to_return(status: 200, body: "{}", headers: {})
+        stub_request(:post, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/addVolume?volumeId=#{volume_id}")
+          .to_return(status: 200, body: "{}", headers: {})
 
         VCR.turn_off!
           actual = BookService.add_book(shelf_id, volume_id, 'auth_token')
@@ -113,18 +92,10 @@ RSpec.describe 'book service' do
     describe '.remove_book' do
       it 'can remove a book from a users shelf' do
         shelf_id = 4
-        key = Figaro.env.BOOK_KEY
         volume_id = "inYs79gV4UQC"
 
-        stub_request(:post, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?key=#{key}&volumeId=#{volume_id}").
-          with(
-            headers: {
-         	  'Accept'=>'*/*',
-         	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-         	  'Authorization'=>'Bearer auth_token',
-         	  'User-Agent'=>'Faraday v1.5.1'
-            }).
-        to_return(status: 200, body: '{}', headers: {})
+        stub_request(:post, "https://books.googleapis.com/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?volumeId=#{volume_id}")
+          .to_return(status: 200, body: '{}', headers: {})
 
         VCR.turn_off!
           actual = BookService.remove_book(shelf_id, volume_id, 'auth_token')
