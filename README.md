@@ -44,34 +44,49 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="examples">Examples</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contribute">Contribute</a></li>
   </ol>
 </details>
 
 
-
+<a id="about-the-project">
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+## about the project
 An API Integration built to bridge [epeolatry | FRONT END](https://github.com/Caleb1991/epeolatry_front_end.git) to GoogleBooks - allowing users not only to track their literary/vocabulary journey <em>within</em> our app, but also to edit their Google Bookshelves, Reading Lists, etc. <em>through</em> our app.
+</a>
 
-### Built With
-
+<a id="built-with">
+<!-- BUILT WITH -->
+  
+## built with
 * [Ruby | v](https://www.ruby-lang.org/en/)
 * [Rails | v](https://rubyonrails.org/)
+</a>
 
+<a id="getting-started">
 <!-- GETTING STARTED -->
-## Getting Started
+  
+## getting started
+- Visit us on [Heroku](https://epeolatry-back-end.herokuapp.com/)
+- If you'd prefer a more behind-the-scenes tour, run through [LocalHost:3000](http://localhost:3000/) - starting with the steps below.
+</a>
 
-Visit us on [Heroku](https://epeolatry-back-end.herokuapp.com/) <strong>OR</strong> | If you'd prefer a more behind-the-scenes tour, run through [LocalHost:3000](http://localhost:3000/) - starting with the steps below.
-
-### Prerequisites
-
+<a id="prerequisites">
+<!-- PREREQUISITES -->  
+  
+#### PREREQUISITES
 - You may <em>want</em> to browse the Google Books API Docs
 - You will <strong>need</strong> to request an API Key
 - <strong><em>I'd recommend both</em></strong> | You can do either [HERE](https://developers.google.com/books/docs/overview) 
+</a>
 
-### Installation (if running locally)
+<a id="installation">
+<!-- INSTALLATION -->
+  
+#### INSTALLATION (local)
 
 1. Fork and clone this repo
 2. Add Figaro to Gemfile
@@ -91,14 +106,17 @@ Visit us on [Heroku](https://epeolatry-back-end.herokuapp.com/) <strong>OR</stro
 3. Install gem packages by running `bundle`
 4. Setup the database by running `rails db:{drop,create,migrate}`
 5. Run `rails s` and navigate to http://localhost:3000
+</a>
 
+<a id="usage">
 <!-- USAGE -->
-## Usage
-
+  
+## usage
 Below are all included endpoints, along with necessary params.
 * All with append to base connector http://localhost:3000 or https://epeolatry-back-end.herokuapp.com ([Heroku](https://epeolatry-back-end.herokuapp.com))
 
-### Books:
+  
+#### BOOKS
 
 | Method   | URL                      | Detail             | Params                                             |
 | -------- | ------------------------ | ------------------ | -------------------------------------------------- |
@@ -108,19 +126,21 @@ Below are all included endpoints, along with necessary params.
 | `DELETE`    | `/api/v1/user/books/:volume_id`     | Remove Book From Reader's Library     | { auth_token: auth_token_for_user, shelf_id: ‘2, 3, or 4’ } |
 
 
-### Words:
+#### WORDS
 
 | Method   | URL                      | Detail             | Params                                             |
 | -------- | ------------------------ | ------------------ | -------------------------------------------------- |
 | `GET`    | `/api/v1/word/search`     | Word Search Results     | params[:q] = <'word you want to search example - caterwaul'> |
 | `POST`    | `/api/v1/user/words`     | Add Word to Glossary for given Book     | { word: 'word to look up and create', volume_id: book_id, user_id: user_id } |
 | `GET`    | `/api/v1/user/words`     | Reader's Glossary of Words     | { user_id: user_id } |
+</a>
 
-
+  
+<a id="examples">
 <!-- EXAMPLES -->
-## EXAMPLES
 
-### Reader's Books
+## examples
+#### READER'S BOOKS:
 * GET https://epeolatry-back-end.herokuapp.com/api/v1/user/books | params: { auth_token: 'the users auth_token from google' }
 
 ```
@@ -174,7 +194,7 @@ Below are all included endpoints, along with necessary params.
 ```
 
 
-### Word Search Results
+#### WORD SEARCH RESULTS:
 * GET https://epeolatry-back-end.herokuapp.com/api/v1/word/search | params: { word: 'word to look up and create', volume_id: book_id, user_id: user_id }
 
 ```
@@ -199,18 +219,21 @@ Below are all included endpoints, along with necessary params.
  }
     
 ```
+</a>
 
 
+<a id="roadmap">
 <!-- ROADMAP -->
-## Roadmap
+  
+## roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+</a>
 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
+<a id="contribute">
+<!-- CONTRIBUTE -->
+  
+## contribute
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
@@ -218,7 +241,7 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
+</a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
