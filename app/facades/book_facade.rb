@@ -5,18 +5,24 @@ class BookFacade
       []
     else
       books.map do |book|
+        # BookPoro.new(g_id: book[:id],
+        #             title: book[:volumeInfo][:title],
+        #             authors: book[:volumeInfo][:authors],
+        #             genres: book[:volumeInfo][:categories],
+        #             description: book[:volumeInfo][:description])
         BookPoro.new(g_id: book[:id],
-                    title: book[:volumeInfo][:title],
-                    authors: book[:volumeInfo][:authors],
-                    genres: book[:volumeInfo][:categories],
-                    description: book[:volumeInfo][:description])
+                    title: book[:title],
+                    authors: book[:authors],
+                    genres: book[:categories],
+                    description: book[:description])
+
       end
     end
   end
 
   def self.create_book_object_with_given_id(book_id)
     json = BookService.volume_lookup(book_id)
-
-    BookPoro.new(json)
+    
+    test = BookPoro.new(json)
   end
 end

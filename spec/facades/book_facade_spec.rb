@@ -4,6 +4,7 @@ RSpec.describe BookFacade do
   before :each do
     VCR.turn_on!
   end
+
   describe 'class methods' do
     describe 'title_search' do
       it 'returns 10 books by title' do
@@ -19,6 +20,7 @@ RSpec.describe BookFacade do
           expect(actual[0].description.include?('A visionary work')).to eq(true)
         end
       end
+
       it 'returns the next ten books if page 2 is sent' do
         VCR.use_cassette 'sparrow_2' do
           actual = BookFacade.title_search('sparrow', 10)
@@ -38,11 +40,19 @@ RSpec.describe BookFacade do
           expect(actual[0].description.include?('In Children of God, Mary')).to eq(true)
         end
       end
+
       it 'returns an empty array if nothing matches the search' do
         VCR.use_cassette 'no_match' do
           actual = BookFacade.title_search('alsdfjllskfjlasdkjflask')
 
           expect(actual).to eq([])
+        end
+      end
+    end
+    describe '.create book' do
+      it 'can create a book object with a given id' do
+        VCR.use_cassette 'create_book' do
+          expect(BookFacade.create_book_object_with_given_id('ZXRxl3Bl2xMC').title).to eq('not this')
         end
       end
     end

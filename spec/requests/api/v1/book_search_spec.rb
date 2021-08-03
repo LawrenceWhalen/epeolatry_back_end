@@ -52,4 +52,21 @@ RSpec.describe 'Book Search' do
       end
     end
   end
+
+  describe 'show searched book' do
+    it 'can show a book that has been searched for' do
+      VCR.use_cassette 'search_1' do
+        get api_v1_book_search_path(search:'sparrow')
+      end
+
+      actual = JSON.parse(response.body, symbolize_names: true)
+
+      expect(actual[:data].length).to eq(10)
+      expect(actual[:data][0][:id]).to eq('ZXRxl3Bl2xMC')
+      expect(actual[:data][0][:attributes][:title]).to eq('The Sparrow')
+      expect(actual[:data][0][:attributes][:authors][0]).to eq('Mary Doria Russell')
+
+      get api_v1_book_show_path
+    end
+  end
 end
