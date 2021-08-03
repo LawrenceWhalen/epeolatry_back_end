@@ -11,8 +11,8 @@ class UserWordsFacade
                  part_of_speech: word_response.first[:meanings].first[:partOfSpeech],
                  synonyms: word_response.first[:meanings].first[:definitions].first[:synonyms],
                  example: word_response.first[:meanings].first[:definitions].first[:example])
-    else
-      nil
+    elsif word_response.class == Hash
+      word_response[:message] + " " + word_response[:resolution]
     end
   end
 end

@@ -14,4 +14,7 @@ class Api::V1::BookSearchController < ApplicationController
     end
   end
 
+  def show
+    
+  end
 end

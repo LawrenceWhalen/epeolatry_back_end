@@ -30,7 +30,9 @@ RSpec.describe 'user words facade' do
       it 'looks up a word and returns a word object with response' do
         input_word = 'test'
 
-        UserWordsFacade.create_word(input_word)
+        VCR.use_cassette 'create_word_test' do
+          UserWordsFacade.create_word(input_word)
+        end
 
         new_word = Word.last
         expect(new_word.word).to eq(input_word)
@@ -46,10 +48,12 @@ RSpec.describe 'user words facade' do
       it 'does not add word if word not found' do
         non_word = 'gte'
         pre_word_count = Word.all.count
-        output = UserWordsFacade.create_word(non_word)
+        VCR.use_cassette 'not_a_word' do
+          @output = UserWordsFacade.create_word(non_word)
+        end
         post_word_count = Word.all.count
 
-        expect(output).to eq(nil)
+        expect(@output).to eq("Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.")
         expect(post_word_count - pre_word_count).to eq(0)
       end
     end
