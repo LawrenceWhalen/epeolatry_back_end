@@ -49,10 +49,11 @@ RSpec.describe BookFacade do
         end
       end
     end
+
     describe '.create book' do
       it 'can create a book object with a given id' do
         VCR.use_cassette 'create_book' do
-          expect(BookFacade.create_book_object_with_given_id('ZXRxl3Bl2xMC').title).to eq('not this')
+          expect(BookFacade.create_book_object_with_given_id('ZXRxl3Bl2xMC').title).to eq('The Sparrow')
         end
       end
     end
