@@ -35,6 +35,12 @@ class BookService
     conn(auth_token).post "/books/v1/mylibrary/bookshelves/#{shelf_id}/removeVolume?volumeId=#{volume_id}"
   end
 
+  def self.volume_lookup(book_id)
+    response = conn.get("/books/v1/volumes/#{book_id}")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn(auth_token = nil)

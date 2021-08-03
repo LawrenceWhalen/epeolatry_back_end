@@ -18,8 +18,12 @@ class Api::V1::User::WordsController < ApplicationController
 
   def show
     word = Word.find(params[:id])
-    books = Glossary.where('word_id = ?', word.id).pluck(:book_id) #need to also add user_id, passed as a param
-    books.map do |book|
+    book_ids = Glossary.where('word_id = ?', word.id).pluck(:book_id) #need to also add user_id, passed as a param
+    books = book_ids.map do |book_id|
+      BookFacade.create_book_object_with_given_id(book_id)
+    end
+
+    render json: BookAndWordSerializer.word_and_book_attributes(word, books)
       # create a method in the bookservice to lookup the volume, grab title and id
       # BookService.volume_lookup (https://www.googleapis.com/books/v1/volumes/volumeId)
       # make book POROS
@@ -34,4 +38,3 @@ class Api::V1::User::WordsController < ApplicationController
   #def _params
     #params.permit(:)
   #end
-end
