@@ -24,9 +24,6 @@ class Api::V1::User::WordsController < ApplicationController
     end
 
     render json: BookAndWordSerializer.word_and_book_attributes(word, books)
-      # create a method in the bookservice to lookup the volume, grab title and id
-      # BookService.volume_lookup (https://www.googleapis.com/books/v1/volumes/volumeId)
-      # make book POROS
     end
 
     # serialize a word object with an attribute that is an array of book objects?
