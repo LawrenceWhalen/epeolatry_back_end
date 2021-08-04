@@ -19,7 +19,7 @@ class BookAndWordSerializer
       booksData: books.map do |book|
         {
           "id": book.g_id,
-          "type": 'book'
+          "type": 'book',
           "attributes":
           {
             "title": book.title,
