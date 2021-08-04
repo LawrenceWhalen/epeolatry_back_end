@@ -27,5 +27,6 @@ class BookAndWordSerializer
           }
         }
       end
+    }
   end
 end
