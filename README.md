@@ -60,15 +60,16 @@ An API Integration built to bridge [epeolatry | FRONT END](https://github.com/Ca
 
 <a id="built-with">
 <!-- BUILT WITH -->
-  
+
 ## built with
-* [Ruby | v](https://www.ruby-lang.org/en/)
-* [Rails | v](https://rubyonrails.org/)
+* [Ruby | v2.7.2](https://www.ruby-lang.org/en/)
+* [Rails | v5.2.6](https://rubyonrails.org/)
+
 </a>
 
 <a id="getting-started">
 <!-- GETTING STARTED -->
-  
+
 ## getting started
 - Visit us on [Heroku](https://epeolatry-back-end.herokuapp.com/)
 - If you'd prefer a more behind-the-scenes tour, run through [LocalHost:3000](http://localhost:3000/) - starting with the steps below.
@@ -76,23 +77,23 @@ An API Integration built to bridge [epeolatry | FRONT END](https://github.com/Ca
 
 <a id="prerequisites">
 <!-- PREREQUISITES -->  
-  
+
 #### PREREQUISITES
 - You may <em>want</em> to browse the Google Books API Docs
 - You will <strong>need</strong> to request an API Key
-- <strong><em>I'd recommend both</em></strong> | You can do either [HERE](https://developers.google.com/books/docs/overview) 
+- <strong><em>I'd recommend both</em></strong> | You can do either [HERE](https://developers.google.com/books/docs/overview)
 </a>
 
 <a id="installation">
 <!-- INSTALLATION -->
-  
+
 #### INSTALLATION (local)
 
 1. Fork and clone this repo
 2. Add Figaro to Gemfile
    ```sh
    #epeolatry_front_end/gemfile
-   
+
    #group :development, :test do
    gem 'figaro'
    #end
@@ -100,9 +101,9 @@ An API Integration built to bridge [epeolatry | FRONT END](https://github.com/Ca
 3. Add your API Key
    ```sh
    #config/application.yml
-   
+
    API_KEY = 'ENTER YOUR API'
-   ``` 
+   ```
 3. Install gem packages by running `bundle`
 4. Setup the database by running `rails db:{drop,create,migrate}`
 5. Run `rails s` and navigate to http://localhost:3000
@@ -110,12 +111,12 @@ An API Integration built to bridge [epeolatry | FRONT END](https://github.com/Ca
 
 <a id="usage">
 <!-- USAGE -->
-  
+
 ## usage
 Below are all included endpoints, along with necessary params.
 * All with append to base connector http://localhost:3000 or https://epeolatry-back-end.herokuapp.com ([Heroku](https://epeolatry-back-end.herokuapp.com))
 
-  
+
 #### BOOKS
 
 | Method   | URL                      | Detail             | Params                                             |
@@ -135,7 +136,7 @@ Below are all included endpoints, along with necessary params.
 | `GET`    | `/api/v1/user/words`     | Reader's Glossary of Words     | { user_id: user_id } |
 </a>
 
-  
+
 <a id="examples">
 <!-- EXAMPLES -->
 
@@ -190,7 +191,7 @@ Below are all included endpoints, along with necessary params.
     :description=>
      "\"This Snow Crash thing--is it a virus, a drug, or a religion?\" Juanita shrugs. \"What's the difference?\" The only relief from the sea of logos is within the well-guarded borders of the Burbclaves. Is it any wonder that most sane folks have ...",
     :shelves=>["To read"]}}]
-    
+
 ```
 
 
@@ -217,14 +218,14 @@ Below are all included endpoints, along with necessary params.
    }
   }
  }
-    
+
 ```
 </a>
 
 
 <a id="roadmap">
 <!-- ROADMAP -->
-  
+
 ## roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
@@ -232,7 +233,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <a id="contribute">
 <!-- CONTRIBUTE -->
-  
+
 ## contribute
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
