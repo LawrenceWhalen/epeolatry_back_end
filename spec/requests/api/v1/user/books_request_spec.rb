@@ -22,7 +22,6 @@ RSpec.describe 'Books Request' do
         get '/api/v1/user/books'
 
         actual = JSON.parse(response.body, symbolize_names: true)[:data]
-
         expect(actual.class).to eq(Array)
         expect(actual[0][:attributes][:title]).to_not eq(nil)
         expect(actual[0][:id]).to_not eq(nil)
