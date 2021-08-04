@@ -11,6 +11,20 @@ class Api::V1::User::BooksController < ApplicationController
     UserBooksFacade.add_book(params[:shelf_id], params[:volume_id], params[:auth_token])
   end
 
+  def show
+    book = UserBooksFacade.single_book(params[:auth_token], params[:id])
+    word_ids = Glossary.where('book_id = ? AND user_id = ?', params[:id], params[:user_id]).pluck(word_id)
+
+    if word_ids
+      words = word_ids.map do |id|
+        Word.find(id)
+      end
+      render json: BookAndWordSerializer.book_show_page_with_word_ids(book, words)
+    else
+      render json: BookAndWordSerializer.book_show_page_with_no_word_ids(book)
+    end
+  end
+
   def destroy
     BookService.remove_book(params[:shelf_id], params[:id], params[:auth_token])
   end

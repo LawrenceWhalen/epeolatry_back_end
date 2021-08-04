@@ -1,11 +1,11 @@
 class BookAndShelf
-  attr_reader :title, 
-              :authors, 
-              :description, 
+  attr_reader :title,
+              :authors,
+              :description,
               :genres,
               :g_id,
               :shelves
-  
+
   attr_writer :shelves
 
   def initialize(attributes)
