@@ -1,0 +1,56 @@
+require 'rails_helper'
+
+RSpec.describe 'Dashboard Request' do
+  before :each do
+    user_id = 4321
+
+    sample_book_1 = {
+      g_id: 111111111111,
+      title: "This is a Real Book",
+      authors: "I am the Writer",
+      genres: "Nonfiction",
+      description: "A very interesting, non-fictional, really written book."
+    }
+
+    2.times do
+      create(:word) do |word|
+        create(:glossary, book_id: sample_book_1[:g_id], user_id: user_id, word_id: word.id)
+      end
+    end
+
+    sample_book_2 = {
+      g_id: 222222222222,
+      title: "This is a very Fictional Unreal Book",
+      authors: "Baxter Willoughby",
+      genres: "Fiction",
+      description: "The adventures of Baxter."
+    }
+
+    4.times do
+      create(:word) do |word|
+        create(:glossary, book_id: sample_book_2[:g_id], user_id: user_id, word_id: word.id)
+      end
+    end
+
+    short = Word.create(word: 'shortestwordeverontheplanet', definition: 'little length', example: 'she was very
+      short and asked for help to reach the top shelf', part_of_speech: 'merp', synonyms: 'mlerp',
+      phonetic: 'muh-ler-p', phonetic_link: 'link here')
+
+      create(:glossary, book_id: sample_book_2[:g_id], user_id: user_id, word_id: short.id)
+
+    get "/api/v1/user/dashboard?user_id=#{user_id}"
+    @word_stats = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  xit 'returns average words saved per book' do
+    expect(word_stats.average_saved_per_book).to eq(3)
+  end
+
+  it 'returns words most frequently added by reader' do
+    expect(word_stats[:most_frequent_search]).to eq()
+  end
+
+  it 'returns searched word with longest length' do
+    expect(@word_stats[:longest_word]).to eq('shortestwordeverontheplanet')
+  end
+end
