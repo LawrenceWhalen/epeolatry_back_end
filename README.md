@@ -15,12 +15,8 @@
   <h3 align="center">e . p . e . o . l . a . t . r . y | backend</h3>
   <p align="center">
     a carefully crafted collection of API endpoints to cater to and be consumed by <a href="https://github.com/Caleb1991/epeolatry_front_end.git">epeolatry | FRONT END</a>
-    <br />
-    <a href="DEMOHTTPHERE">View Demo</a>
-    ·
-    <a href="BUGREPORTHTTPHERE">Report Bug</a>
-    ·
-    <a href="FEATUREREQUESTHTTPHERE">Request Feature</a>
+    <br /><br>
+
   </p>
 </p>
 
