@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en_US/test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0
+      Date:
+      - Tue, 03 Aug 2021 02:31:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1663'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"67f-uZLhN2lwMCtPyK0NMYyVL5EzxcM"
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sid29yZCI6InRlc3QiLCJwaG9uZXRpY3MiOlt7InRleHQiOiIvdMmbc3QvIiwiYXVkaW8iOiJodHRwczovL2xleC1hdWRpby51c2VyZW1hcmthYmxlLmNvbS9tcDMvdGVzdF91c18xLm1wMyJ9XSwibWVhbmluZ3MiOlt7InBhcnRPZlNwZWVjaCI6InRyYW5zaXRpdmUgdmVyYiIsImRlZmluaXRpb25zIjpbeyJkZWZpbml0aW9uIjoiVGFrZSBtZWFzdXJlcyB0byBjaGVjayB0aGUgcXVhbGl0eSwgcGVyZm9ybWFuY2UsIG9yIHJlbGlhYmlsaXR5IG9mIChzb21ldGhpbmcpLCBlc3BlY2lhbGx5IGJlZm9yZSBwdXR0aW5nIGl0IGludG8gd2lkZXNwcmVhZCB1c2Ugb3IgcHJhY3RpY2UuIiwic3lub255bXMiOlsidHJ5IG91dCIsInRyaWFsIiwiY2Fycnkgb3V0IHRyaWFscyBvbiIsInB1dCB0byB0aGUgdGVzdCIsInB1dCB0aHJvdWdoIGl0cyBwYWNlcyIsImV4cGVyaW1lbnQgd2l0aCIsInBpbG90Il0sImV4YW1wbGUiOiJ0aGlzIHJhbmdlIGhhcyBub3QgYmVlbiB0ZXN0ZWQgb24gYW5pbWFscyJ9XX0seyJwYXJ0T2ZTcGVlY2giOiJub3VuIiwiZGVmaW5pdGlvbnMiOlt7ImRlZmluaXRpb24iOiJBIHByb2NlZHVyZSBpbnRlbmRlZCB0byBlc3RhYmxpc2ggdGhlIHF1YWxpdHksIHBlcmZvcm1hbmNlLCBvciByZWxpYWJpbGl0eSBvZiBzb21ldGhpbmcsIGVzcGVjaWFsbHkgYmVmb3JlIGl0IGlzIHRha2VuIGludG8gd2lkZXNwcmVhZCB1c2UuIiwic3lub255bXMiOlsidHJpYWwiLCJleHBlcmltZW50IiwicGlsb3Qgc3R1ZHkiLCJ0cnktb3V0Il0sImV4YW1wbGUiOiJubyBzcGFya2luZyB3YXMgdmlzaWJsZSBkdXJpbmcgdGhlIHRlc3RzIn0seyJkZWZpbml0aW9uIjoiQSBtb3ZhYmxlIGhlYXJ0aCBpbiBhIHJldmVyYmVyYXRpbmcgZnVybmFjZSwgdXNlZCBmb3Igc2VwYXJhdGluZyBnb2xkIG9yIHNpbHZlciBmcm9tIGxlYWQuIiwiZXhhbXBsZSI6IldoZW4gZnVsbHkgcHJlcGFyZWQsIHRoZSB0ZXN0IGlzIGFsbG93ZWQgdG8gZHJ5LCBhbmQgaXMgdGhlbiBwbGFjZWQgaW4gYSAgZnVybmFjZSwgY29uc3RydWN0ZWQgaW4gYWxsIHJlc3BlY3RzIGxpa2UgYSBjb21tb24gcmV2ZXJiZXJhdG9yKScgZnVybmFjZSwgIGV4Y2VwdCB0aGF0IGEgc3BhY2UgaXMgbGVmdCBvcGVuIGluIHRoZSBiZWQgb2YgaXQgdG8gcmVjZWl2ZSB0aGUgdGVzdCwgYW5kIHRoYXQgIHRoZSB3aWR0aCBvZiB0aGUgYXJjaCBpcyBtdWNoIHJlZHVjZWQuIn1dfV19LHsid29yZCI6InRlc3QiLCJwaG9uZXRpY3MiOlt7InRleHQiOiIvdMmbc3QvIiwiYXVkaW8iOiJodHRwczovL2xleC1hdWRpby51c2VyZW1hcmthYmxlLmNvbS9tcDMvdGVzdF91c18xLm1wMyJ9XSwibWVhbmluZ3MiOlt7InBhcnRPZlNwZWVjaCI6Im5vdW4iLCJkZWZpbml0aW9ucyI6W3siZGVmaW5pdGlvbiI6IlRoZSBzaGVsbCBvciBpbnRlZ3VtZW50IG9mIHNvbWUgaW52ZXJ0ZWJyYXRlcyBhbmQgcHJvdG96b2FucywgZXNwZWNpYWxseSB0aGUgY2hhbGt5IHNoZWxsIG9mIGEgZm9yYW1pbmlmZXJhbiBvciB0aGUgdG91Z2ggb3V0ZXIgbGF5ZXIgb2YgYSB0dW5pY2F0ZS4iLCJleGFtcGxlIjoiVGhlIHRlc3RzIG9mIHRoZSBzaGVsbHMgYXJlIHJlY3J5c3RhbGxpemVkLCBidXQgdGhlIG9yaWdpbmFsIG9ybmFtZW50YXRpb24gaXMgcHJlc2VydmVkIGluIHZlcnkgZ29vZCBkZXRhaWwuIn1dfV19XQ==
+  recorded_at: Tue, 03 Aug 2021 02:31:30 GMT
+recorded_with: VCR 6.0.0

@@ -1,4 +1,4 @@
-class BookSearchController < ApplicationController
+class Api::V1::BookSearchController < ApplicationController
 
   def index
     if params[:search]
@@ -13,5 +13,8 @@ class BookSearchController < ApplicationController
       render json: { error: 'No search sent' }
     end
   end
-  
+
+  def show
+    
+  end
 end
