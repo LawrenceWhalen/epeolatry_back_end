@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe BookAndShelf do
   it 'has attributes' do
     actual = BookAndShelf.new(g_id: '123', 
-                          title: 'stinky cheese man', 
-                          authors: ['Alex Smell', 'Wanda Feet'], 
-                          description: 'A breathtaking book', 
-                          genres: ['non-fiction'], 
+                          title: 'stinky cheese man',
+                          authors: ['Alex Smell', 'Wanda Feet'],
+                          description: 'A breathtaking book',
+                          genres: ['non-fiction'],
                           shelves: ['Reading now', 'Have read'])
 
     expect(actual.g_id).to eq('123')
@@ -18,14 +18,14 @@ RSpec.describe BookAndShelf do
   end
   it 'can write shelves' do
     actual = BookAndShelf.new(
-      g_id: '123', 
-      title: 'stinky cheese man', 
-      authors: ['Alex Smell', 'Wanda Feet'], 
-      description: 'A breathtaking book', 
-      genres: ['non-fiction'], 
+      g_id: '123',
+      title: 'stinky cheese man',
+      authors: ['Alex Smell', 'Wanda Feet'],
+      description: 'A breathtaking book',
+      genres: ['non-fiction'],
       shelves: ['Reading now', 'Have read']
     )
-    
+
     expect(actual.shelves).to eq(['Reading now', 'Have read'])
 
     actual.shelves = ['Have read']

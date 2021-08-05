@@ -15,6 +15,8 @@ class Api::V1::BookSearchController < ApplicationController
   end
 
   def show
-    
+    book = BookFacade.create_book_object_with_given_id(params[:book_id])
+
+    render json: BookPoroSerializer.new(book)
   end
 end
