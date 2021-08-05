@@ -37,7 +37,7 @@ class BookService
 
   def self.volume_lookup(book_id)
     response = conn.get("/books/v1/volumes/#{book_id}")
-    binding.pry
+
     JSON.parse(response.body, symbolize_names: true)
   end
 

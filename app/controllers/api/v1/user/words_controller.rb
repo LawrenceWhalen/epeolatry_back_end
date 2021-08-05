@@ -3,11 +3,9 @@ class Api::V1::User::WordsController < ApplicationController
     word_ids = Glossary.users_words(params[:user_id])
     words = Word.find(word_ids)
 
-    test = Glossary.find_books(word_ids, params[:user_id])
+    word_with_books = UserWordsFacade.words_with_books(word_ids, params[:user_id])
 
-    binding.pry
-
-    render json: WordSerializer.new(words)
+    render json: WordWithBooksSerializer.new(word_with_books)
   end
 
   def create
