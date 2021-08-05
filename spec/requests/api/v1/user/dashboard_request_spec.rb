@@ -25,7 +25,7 @@ RSpec.describe 'Dashboard Request' do
                     genres: "Fiction",
                     description: "The adventures of Baxter."
                     }
-    2.times do
+    3.times do
       create(:word) do |word|
         create(:glossary, book_id: sample_book_1[:g_id], user_id: user_id, word_id: word.id)
       end
@@ -45,8 +45,8 @@ RSpec.describe 'Dashboard Request' do
     @word_stats = JSON.parse(response.body, symbolize_names: true)
   end
 
-  xit 'returns average words saved per book' do
-    expect(@word_stats.average_saved_per_book).to eq(3)
+  it 'returns average words saved per book' do
+    expect(@word_stats[:avg_per_book]).to eq(5)
   end
 
   it 'returns words most frequently added by reader' do
@@ -55,5 +55,6 @@ RSpec.describe 'Dashboard Request' do
 
   it 'returns searched word with longest length' do
     expect(@word_stats[:longest_word]).to eq('shortestwordeverontheplanet')
+    binding.pry
   end
 end
