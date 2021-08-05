@@ -2,6 +2,11 @@ class Api::V1::User::WordsController < ApplicationController
   def index
     word_ids = Glossary.users_words(params[:user_id])
     words = Word.find(word_ids)
+
+    test = Glossary.find_books(word_ids, params[:user_id])
+
+    binding.pry
+
     render json: WordSerializer.new(words)
   end
 
