@@ -40,7 +40,7 @@ class UserBooksFacade
         { id: shelf[:id], title: shelf[:title] }
       end
     end.compact
-    all_books = shelf_ids.map do |shelf|
+    all_books = shelf_ids.flat_map do |shelf|
       contents = BookService.books_on_shelf(shelf[:id], auth_token)[:items]
       contents.map do |book|
         BookAndShelf.new(
@@ -52,7 +52,7 @@ class UserBooksFacade
           shelves: [shelf[:title]]
         )
       end if contents
-    end.flatten
+    end
 
     if all_books.include?(nil)
       all_books.pop

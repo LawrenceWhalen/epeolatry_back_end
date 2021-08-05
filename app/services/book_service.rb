@@ -41,8 +41,6 @@ class BookService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  private
-
   def self.conn(auth_token = nil)
     Faraday.new(url: 'https://books.googleapis.com') do |faraday|
       faraday.headers[:Authorization] = "Bearer #{auth_token}"
