@@ -41,7 +41,7 @@ class BookAndWordSerializer
           authors: book.authors,
           genres: book.genres,
           description: book.description,
-          shelf: book.shelves
+          shelves: book.shelves
         }
       },
       wordData: words.map do |word|
@@ -68,7 +68,7 @@ class BookAndWordSerializer
           authors: book.authors,
           genres: book.genres,
           description: book.description,
-          shelf: book.shelves
+          shelves: book.shelves
         }
       },
       wordData:
