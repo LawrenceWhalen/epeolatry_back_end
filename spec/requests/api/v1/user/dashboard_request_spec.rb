@@ -50,7 +50,7 @@ RSpec.describe 'Dashboard Request' do
   end
 
   it 'returns words most frequently added by reader' do
-    expect(@word_stats[:most_frequent]).to eq('frequent')
+    expect(@word_stats[:most_frequent][0][:word]).to eq('frequent')
   end
 
   it 'returns searched word with longest length' do

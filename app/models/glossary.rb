@@ -21,11 +21,7 @@ class Glossary < ApplicationRecord
     list.sort {|l, r| r.length <=> l.length}.first
   end
 
-
-
-
-
-  def self.word_stats(user_id)
-    where('user_id = ?', user_id)
-  end
+  # def self.word_stats(user_id)
+  #   where('user_id = ?', user_id)
+  # end
 end

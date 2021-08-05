@@ -1,9 +1,9 @@
 class DashboardSerializer
 
-  def self.word_stats(most_frequent, longest)
+  def self.word_stats(word_stats)
     {
-      most_frequent: most_frequent[0][:word],
-      longest_word: longest
+      most_frequent: word_stats[:most_frequent],
+      longest_word: word_stats[:longest_word]
     }
   end
 end
