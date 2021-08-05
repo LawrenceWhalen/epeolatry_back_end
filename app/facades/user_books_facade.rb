@@ -32,7 +32,7 @@ class UserBooksFacade
     end.values
   end
 
-  def single_book(auth_token, book_id)
+  def self.single_book(auth_token, book_id)
     shelves = BookService.book_shelves(auth_token)
 
     shelf_ids = shelves[:items].map do |shelf|
@@ -40,7 +40,6 @@ class UserBooksFacade
         { id: shelf[:id], title: shelf[:title] }
       end
     end.compact
-
     all_books = shelf_ids.map do |shelf|
       contents = BookService.books_on_shelf(shelf[:id], auth_token)[:items]
       contents.map do |book|
@@ -55,8 +54,18 @@ class UserBooksFacade
       end if contents
     end.flatten
 
-    all_books.find do |book|
-      book.g_id == book_id
+    if all_books.include?(nil)
+      all_books.pop
+    end
+
+    book = all_books.find do |book|
+        book.g_id == book_id
+      end
+
+    if book
+      book
+    else
+      BookFacade.create_book_object_with_given_id(book_id)
     end
   end
 

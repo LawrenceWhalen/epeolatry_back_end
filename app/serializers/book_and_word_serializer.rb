@@ -82,7 +82,11 @@ class BookAndWordSerializer
       wordData:
       {
         id: nil,
-        type: 'word'
+        type: 'word',
+        attributes:
+        {
+          word: nil
+        }
       }
     }
   end

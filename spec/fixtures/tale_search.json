@@ -1,0 +1,779 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1546,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "vTsPAAAAYAAJ",
+      "etag": "y/t7BSpDUGI",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/vTsPAAAAYAAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "subtitle": "A Story of the French Revolution",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "1859",
+        "description": "Presents Dickens' classic novel of love, courage, and sacrifice set against the cataclysmic events of the French Revolution. During the French Revolution a sissolute English lawyer goes to th eguillotine to save a French aristocrat, husband of the woman he loves.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "HARVARD:HN3AKC"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 274,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vTsPAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vTsPAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=vTsPAAAAYAAJ&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=vTsPAAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=vTsPAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=vTsPAAAAYAAJ&rdid=book-vTsPAAAAYAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities.epub?id=vTsPAAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vTsPAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Presents Dickens&#39; classic novel of love, courage, and sacrifice set against the cataclysmic events of the French Revolution."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uSctDAAAQBAJ",
+      "etag": "bpDDt2q03YA",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/uSctDAAAQBAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Edited By S.E. Paces"
+        ],
+        "publisher": "S. Chand Publishing",
+        "publishedDate": "2011-07-01",
+        "description": "Great Stories in Easy English",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788121924207"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8121924200"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uSctDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uSctDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=uSctDAAAQBAJ&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=uSctDAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=uSctDAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 8.4,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 8.4,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=uSctDAAAQBAJ&rdid=book-uSctDAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 8400000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 8400000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities-sample-pdf.acsm?id=uSctDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uSctDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Great Stories in Easy English"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "FcOsBmJCJXsC",
+      "etag": "uus/Or4lfgk",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/FcOsBmJCJXsC",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Penguin",
+        "publishedDate": "2003",
+        "description": "Edited with an Introduction and Notes by Richard Maxwell.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0141439602"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780141439600"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 488,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1394,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=FcOsBmJCJXsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=FcOsBmJCJXsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=FcOsBmJCJXsC&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=FcOsBmJCJXsC&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Tale_of_Two_Cities.html?hl=&id=FcOsBmJCJXsC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=FcOsBmJCJXsC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Edited with an Introduction and Notes by Richard Maxwell."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DC4mYbY6bSwC",
+      "etag": "YphWo1Cm84g",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/DC4mYbY6bSwC",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Charles Dickens",
+          "Gillen D'Arcy Wood"
+        ],
+        "publisher": "Barnes & Noble",
+        "publishedDate": "2003-12-01",
+        "description": "Presents the classic tale of love, courage, and sacrifice set against the cataclysmic events of the French Revolution.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1603033734"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781603033732"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 464,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1601,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DC4mYbY6bSwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DC4mYbY6bSwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DC4mYbY6bSwC&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DC4mYbY6bSwC&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Tale_of_Two_Cities.html?hl=&id=DC4mYbY6bSwC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities-sample-epub.acsm?id=DC4mYbY6bSwC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities-sample-pdf.acsm?id=DC4mYbY6bSwC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DC4mYbY6bSwC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Presents the classic tale of love, courage, and sacrifice set against the cataclysmic events of the French Revolution."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "G_ddxQEACAAJ",
+      "etag": "EnOCKYO/nk4",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/G_ddxQEACAAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Independently Published",
+        "publishedDate": "2019-05-13",
+        "description": "It is 1775, and Mr. Jarvis Lorry is traveling to Dover to meet Lucie Manette. He tells her that she is not an orphan as she had been told from a young age. He now says that he will travel with her to Paris to meet her father, who has recently been released from the Bastille. Doctor Manette is housed in the Defarges' wine-shop and has lost his reason, but he starts to regain it when he meets his daughter and is transported back to London. Five years later, Charles Darnay is tried in London on a charge of treason for providing English secrets to the French and Americans during the outbreak of the American Revolution. The dramatic appearance of Mr. Sydney Carton, who looks remarkably like him, precludes any positive identification and allows Darnay's acquittal. Darnay, Mr. Carton, and Mr. Stryver all fall in love with Lucie Manette, who was a tearful, unwilling witness for the prosecution. Although they all make an attempt to woo her, she favors Charles Darnay and marries him. Carton comes to her house alone and declares that while he expects no return of his love, he would do anything for her or for anyone whom she loves. Darnay has ominously hinted to Doctor Manette of his concealed identity, and he reveals to his father-in-law on the morning of his wedding that he is a French nobleman who has renounced his title. In France, Darnay's uncle, Monseigneur, has been murdered in his bed for crimes against the French people. This means that Darnay is next in line to inherit the aristocratic title, but he tells no one but Doctor Manette. At the urgent request of Monsieur Gabelle, who has been arbitrarily imprisoned, Darnay returns to Paris. He is arrested as a nobleman and an emigrant and thrown into jail. A spy named John Barsad drops into the Defarges' wine-shop to gather evidence regarding whether they are revolutionaries. They reveal practically nothing, although Madame Defarge is knitting a list of those whom she and the other revolutionaries intend to kill. Doctor Manette, Miss Pross, Lucie, and her small child follow Darnay to Paris, where the Doctor is almost successful in using his power among the revolutionaries as a former Bastille prisoner--like the people, he was oppressed by the ruling regime--to secure Darnay's release. But Darnay is once again denounced by the Defarges, a charge which is made even stronger by Monsieur Defarge's revelation of a paper document that he found in Doctor Manette's former cell in the Bastille. The document recounts that Manette was arbitrarily imprisoned by the Evrémondes for having witnessed their rape of a peasant girl and the murder of her brother. Darnay is brought back to prison and sentenced to death.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1098522893"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781098522896"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 492,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=G_ddxQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=G_ddxQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=G_ddxQEACAAJ&dq=tale+of+two+cities&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=G_ddxQEACAAJ&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Tale_of_Two_Cities.html?hl=&id=G_ddxQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=G_ddxQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Five years later, Charles Darnay is tried in London on a charge of treason for providing English secrets to the French and Americans during the outbreak of the American Revolution."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "YqfPAAAAMAAJ",
+      "etag": "yId4BYvrMmE",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/YqfPAAAAMAAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publishedDate": "1868",
+        "description": "\"It was the best of times, it was the worst of times.\" Charles Dickens' classic novel tells the story of two Englishmen--degenerate lawyer Sydney Carton and aristocrat Charles Darnay--who fall in love with the same woman in the midst of the French Revolution's blood and terror. Originally published as 31 weekly instalments, A Tale of Two Cities has been adapted several times for film, serves as a rite of passage for many students, and is one of the most famous novels ever published. This is a free digital copy of a book that has been carefully scanned by Google as part of a project to make the world's books discoverable online. To make this print edition available as an ebook, we have extracted the text using Optical Character Recognition (OCR) technology and submitted it to a review process to ensure its accuracy and legibility across different screen sizes and devices. Google is proud to partner with libraries to make this book available to readers everywhere.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "IND:30000011823097"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 441,
+        "printType": "BOOK",
+        "categories": [
+          "English literature"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 103,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.19.23.0.full.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=YqfPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=YqfPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=YqfPAAAAMAAJ&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=YqfPAAAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YqfPAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=YqfPAAAAMAAJ&rdid=book-YqfPAAAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities.epub?id=YqfPAAAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities.pdf?id=YqfPAAAAMAAJ&hl=&output=pdf&sig=ACfU3U1jhHnMONa3VvwxRW14ch4sBDfCQA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=YqfPAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This is a free digital copy of a book that has been carefully scanned by Google as part of a project to make the world&#39;s books discoverable online."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ffdvDwAAQBAJ",
+      "etag": "v30Y5IgO7rQ",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/ffdvDwAAQBAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Bantam Classics",
+        "publishedDate": "1989",
+        "description": "The grim tale of the people who were caught up in the wave of violence and murder which marked the French Revolution",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780553211764"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0553211765"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 369,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ffdvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ffdvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ffdvDwAAQBAJ&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ffdvDwAAQBAJ&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Tale_of_Two_Cities.html?hl=&id=ffdvDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ffdvDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The grim tale of the people who were caught up in the wave of violence and murder which marked the French Revolution"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QLLNDwAAQBAJ",
+      "etag": "ErqK9d7ehhI",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/QLLNDwAAQBAJ",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities (Seasons Edition -- Winter)",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Thomas Nelson",
+        "publishedDate": "2019-12-10",
+        "description": "“It was a dark winter day, and what with the shadows within, and what with the shadows without, he could but dimly discern the others who were brought there to have their arms bound. Some were standing; some seated. Some were lamenting, and in restless motion; but these were few. The great majority were silent and still, looking fixedly at the ground.” – A Tale of Two Cities, Charles Dickens After eighteen years as a political prisoner in the Bastille, the aging Dr. Manette is finally released and reunited with his daughter in England. However, there he meets two very different men, connected through their love for Lucie Manette. From London, they are all drawn against their will to Paris at the height of the Reign of Terror and soon fall under the lethal shadow of La Guillotine. This e-book edition includes select, highly designed pages with quotes about the winter season. The Seasons Edition - Winter collection includes Little Women, Wuthering Heights, Pride and Prejudice, and A Tale of Two Cities.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780785236535"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0785236538"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 512,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QLLNDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QLLNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=QLLNDwAAQBAJ&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QLLNDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QLLNDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 1.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 1.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QLLNDwAAQBAJ&rdid=book-QLLNDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 1990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Tale_of_Two_Cities_Seasons_Edition_Win-sample-epub.acsm?id=QLLNDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QLLNDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This e-book edition includes select, highly designed pages with quotes about the winter season. The Seasons Edition - Winter collection includes Little Women, Wuthering Heights, Pride and Prejudice, and A Tale of Two Cities."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Np09swEACAAJ",
+      "etag": "5exho+3pKK0",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/Np09swEACAAJ",
+      "volumeInfo": {
+        "title": "At Tale of Two Cities",
+        "authors": [
+          "Charles DICKENS"
+        ],
+        "publishedDate": "2017-11-16",
+        "description": "AT TALE OF TWO CITIESA Tale of Two Cities (1859) is a novel by Charles Dickens, located in London and Paris before and during the French Revolution. The novel tells the story of the French doctor Manette, his 18 years of imprisonment at the Bastille in Paris and his release in London with his daughter Lucie, whom he had never met; Lucie's marriage and the collision between her beloved husband and the people who caused her father's imprisonment; and Mr. and Mrs. Defarge, wine sellers in a poor suburb of Paris. History is confronted with the conditions that led to the French Revolution and the reign of terror.CHARLES DICKENSCharles John Huffam Dickens (February 7, 1812 - June 9, 1870) was an English writer and social critic. He has created some of the most famous fictional characters in the world and is considered by many to be the greatest novelist of the Victorian era. His work enjoyed unprecedented popularity during his lifetime, and in the 20th century critics and scholars had recognized him as a literary genius. His novels and short stories have a lasting popularity.Born in Portsmouth, Dickens left school to work in a factory when his father was incarcerated in a debtors' prison. Despite his lack of formal education, he published a weekly newspaper for 20 years, wrote 15 novels, five short stories, hundreds of short stories and non-fiction articles, taught and played extensively, was a tireless writer and campaigned vigorously for children's rights education and other social reforms.The literary success of Dickens began with the 1836 serial publication of The Pickwick Papers. In a few years he had become an international literary celebrity, famous for his humor, his satire and his observation of character and society. His novels, mostly published monthly or weekly, were the pioneers of the serial publication of narrative fiction, which became the dominant Victorian mode for novel publishing. The down payment format allowed Dickens to gauge the reaction of his audience, and he often altered his plot and character development based on such reactions. For example, when his wife's podiatrist expressed his distress at the way Miss Mowcher in David Copperfield seemed to reflect his disabilities, Dickens improved the character with positive traits. His plots were carefully constructed, and he often woven elements of topical events into his stories. Masses of the illiterate poor chipped in ha'pennies to be read every new monthly episode, opening and inspiring a new class of readers.Dickens was considered the literary colossus of his age. His 1843 novel, A Christmas Carol, remains popular and continues to inspire adaptations in every genre of art. Oliver Twist and Great Expectations are also frequently adapted, and, like many of his novels, evoke images of early Victorian London. His 1859 novel, A Tale of Two Cities, which takes place in London and Paris, is his best-known historical fiction. Dickens has been commended by other writers - from Leo Tolstoy to George Orwell and GK Chesterton - for his realism, comedy, prose style, unique characterizations and social criticism. On the other hand, Oscar Wilde, Henry James and Virginia Woolf complained of a lack of psychological depth, a vague writing and a vein of sacerdotal sentimentalism. The term Dickensian is used to describe something that reminds Dickens and his writings, such as poor social conditions or comically repugnant characters.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1973314320"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781973314325"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 179,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Np09swEACAAJ&dq=tale+of+two+cities&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Np09swEACAAJ&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/At_Tale_of_Two_Cities.html?hl=&id=Np09swEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Np09swEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The novel tells the story of the French doctor Manette, his 18 years of imprisonment at the Bastille in Paris and his release in London with his daughter Lucie, whom he had never met; Lucie&#39;s marriage and the collision between her beloved ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dU51N-dxEDcC",
+      "etag": "+ASQDw04nT4",
+      "selfLink": "https://books.googleapis.com/books/v1/volumes/dU51N-dxEDcC",
+      "volumeInfo": {
+        "title": "A Tale of Two Cities",
+        "subtitle": "A Story of the French Revolution",
+        "authors": [
+          "Charles Dickens"
+        ],
+        "publisher": "Ignatius Press",
+        "publishedDate": "2012-01-01",
+        "description": "The grim tale of the people who were caught up in the wave of violence and murder which marked the French Revolution.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781586174422"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1586174428"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 514,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 2.5,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dU51N-dxEDcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dU51N-dxEDcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=dU51N-dxEDcC&printsec=frontcover&dq=tale+of+two+cities&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=dU51N-dxEDcC&dq=tale+of+two+cities&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Tale_of_Two_Cities.html?hl=&id=dU51N-dxEDcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dU51N-dxEDcC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The grim tale of the people who were caught up in the wave of violence and murder which marked the French Revolution."
+      }
+    }
+  ]
+}

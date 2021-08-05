@@ -26,6 +26,19 @@ RSpec.describe UserBooksFacade do
       end
     end
 
+    describe 'single_book' do
+      xit 'returns a single book' do
+        response = UserBooksFacade.single_book('auth_token', 'ZrNzAwAAQBAJ')
+
+        stub_request(:get, "https://books.googleapis.com/books/v1/volumes/vTsPAAAAYAAJ").
+        to_return(status: 200, body: File.read('spec/fixtures/tale_search.json'), headers: {})
+
+        other_response = UserBooksFacade.single_book('auth_token', 'vTsPAAAAYAAJ')
+
+        binding.pry
+      end
+    end
+
     describe '.add_book' do
       xit '.add_book adds a book to the user\'s library' do
         # how to test this functionality while mocking?
