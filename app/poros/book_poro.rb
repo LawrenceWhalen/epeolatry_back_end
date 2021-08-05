@@ -4,7 +4,7 @@ class BookPoro
               :description,
               :genres,
               :g_id,
-              :shelf
+              :shelves
 
   def initialize(attributes)
     @g_id = attributes[:id]
