@@ -3,7 +3,8 @@ class BookPoro
               :authors,
               :description,
               :genres,
-              :g_id
+              :g_id,
+              :shelf
 
   def initialize(attributes)
     @g_id = attributes[:id]
@@ -11,5 +12,6 @@ class BookPoro
     @authors = attributes[:volumeInfo][:authors]
     @genres = attributes[:volumeInfo][:categories]
     @description = attributes[:volumeInfo][:description]
+    @shelf = nil
   end
 end
