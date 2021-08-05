@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Words Request' do
 
-  xit '#index can get all of a user\'s words' do
+  it '#index can get all of a user\'s words' do
     VCR.turn_on!  
     sample_user_id = 1234
     sample_user_id_2 = 5678
@@ -20,12 +20,12 @@ RSpec.describe 'Words Request' do
         create(:glossary, user_id: sample_user_id_2, word_id: word.id)
       end
     end
-    VCR.use_cassette 'index test' do
-      get "/api/v1/user/words?user_id=#{sample_user_id}"
+    VCR.use_cassette 'index_test' do
+      get "/api/v1/user/words?user_id=12"
 
       words = JSON.parse(response.body, symbolize_names: true)[:data]
-
-      expect(words.count).to eq(10)
+      binding.pry
+      expect(words.count).to eq(3)
     end
   end
 

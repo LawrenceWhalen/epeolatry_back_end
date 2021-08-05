@@ -4,8 +4,12 @@ class Api::V1::User::WordsController < ApplicationController
     words = Word.find(word_ids)
 
     word_with_books = UserWordsFacade.words_with_books(word_ids, params[:user_id])
-
-    render json: WordWithBooksSerializer.new(word_with_books)
+    if word_with_books.class != String
+      render json: WordWithBooksSerializer.new(word_with_books)
+    else
+      alert = AlertPoro.new(alert: 'No Books Saved', id: 404)
+      render json: AlertSerializer.new(alert)
+    end
   end
 
   def create
