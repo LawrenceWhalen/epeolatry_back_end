@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :word do |u|
-    u.word { Faker::Lorem.characters(number: 10) }
+    u.word { Faker::Color.color_name }
     u.definition { Faker::Lorem.sentence }
     u.example { Faker::Lorem.sentence }
     u.part_of_speech { Faker::Lorem.characters(number: 10) }

@@ -5,6 +5,14 @@ class Glossary < ApplicationRecord
     where('user_id = ?', user_id).pluck(:word_id)
   end
 
+  def self.find_books(word_ids, user_id)
+    word_ids.uniq.map do |word|
+      self.select(:word_id, :book_id).
+      where('glossaries.word_id = ? AND glossaries.user_id = ?', word, user_id).
+      order('book_id')
+    end
+  end
+  
   def self.most_frequent_word(user_id)
     word_ids = self.users_words(user_id)
     id = word_ids.group_by{ |e| e }.select { |k, v| v.size > 1 }.map(&:first)

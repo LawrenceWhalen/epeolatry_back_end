@@ -33,7 +33,7 @@ RSpec.describe 'user words facade' do
         VCR.use_cassette 'create_word_test' do
           UserWordsFacade.create_word(input_word)
         end
-
+        
         new_word = Word.last
         expect(new_word.word).to eq(input_word)
         expect(new_word.definition).to eq("Take measures to check the quality, performance, or reliability of (something), especially before putting it into widespread use or practice.")
