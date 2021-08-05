@@ -18,14 +18,15 @@ class UserWordsFacade
 
   def self.words_with_books(word_ids, user_id)
     glossary_objects = Glossary.find_books(word_ids, user_id)
+
+    return 'No Words Saved' if glossary_objects == []
+
     word_with_book_objects = glossary_objects.map do |object|
       [Word.find(object.first.word_id),
       object.map do |word|
         BookFacade.create_book_object_with_given_id(word.book_id)
       end]
     end
-    
-    return 'No Words Saved' if word_with_book_objects == []
 
     word_with_book_objects.map do |word|
       WordAndBooksPoro.new(
