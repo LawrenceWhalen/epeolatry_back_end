@@ -35,7 +35,6 @@ RSpec.describe UserBooksFacade do
 
         other_response = UserBooksFacade.single_book('auth_token', 'vTsPAAAAYAAJ')
 
-        binding.pry
       end
     end
 
