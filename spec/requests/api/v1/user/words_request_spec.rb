@@ -24,7 +24,7 @@ RSpec.describe 'Words Request' do
       get "/api/v1/user/words?user_id=12"
 
       words = JSON.parse(response.body, symbolize_names: true)[:data]
-      binding.pry
+
       expect(words.count).to eq(3)
     end
   end
