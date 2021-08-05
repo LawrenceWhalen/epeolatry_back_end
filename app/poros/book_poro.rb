@@ -12,6 +12,6 @@ class BookPoro
     @authors = attributes[:volumeInfo][:authors]
     @genres = attributes[:volumeInfo][:categories]
     @description = attributes[:volumeInfo][:description]
-    @shelf = nil
+    @shelves = nil
   end
 end
