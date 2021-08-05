@@ -18,7 +18,7 @@ class Api::V1::User::WordsController < ApplicationController
 
   def show
     word = Word.find(params[:id])
-    book_ids = Glossary.where('word_id = ?', word.id).pluck(:book_id) #need to also add user_id, passed as a param
+    book_ids = Glossary.where('word_id = ? AND user_id = ?', word.id, params[:user_id]).pluck(:book_id)
     books = book_ids.map do |book_id|
       BookFacade.create_book_object_with_given_id(book_id)
     end

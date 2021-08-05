@@ -65,8 +65,6 @@ RSpec.describe 'Book Search' do
       expect(actual[:data][0][:id]).to eq('ZXRxl3Bl2xMC')
       expect(actual[:data][0][:attributes][:title]).to eq('The Sparrow')
       expect(actual[:data][0][:attributes][:authors][0]).to eq('Mary Doria Russell')
-
-      get api_v1_book_show_path
     end
   end
 end

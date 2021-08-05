@@ -13,6 +13,6 @@ class BookFacade
   def self.create_book_object_with_given_id(book_id)
     json = BookService.volume_lookup(book_id)
 
-    test = BookPoro.new(json)
+    BookPoro.new(json)
   end
 end
