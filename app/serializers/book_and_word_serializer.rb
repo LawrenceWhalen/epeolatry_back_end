@@ -41,11 +41,7 @@ class BookAndWordSerializer
           authors: book.authors,
           genres: book.genres,
           description: book.description,
-          shelf: if book.shelf == 'Reading now' || 'To read' || 'Have read'
-                    book.shelf
-                 else
-                   nil
-                 end
+          shelf: book.shelf
         }
       },
       wordData: words.map do |word|
@@ -72,11 +68,7 @@ class BookAndWordSerializer
           authors: book.authors,
           genres: book.genres,
           description: book.description,
-          shelf: if book.shelf == 'Reading now' || 'To read' || 'Have read'
-                    book.shelf
-                 else
-                   nil
-                 end
+          shelf: book.shelf
         }
       },
       wordData:
