@@ -30,7 +30,7 @@ class BookAndWordSerializer
     }
   end
 
-  def book_show_page_with_word_ids(book, words)
+  def self.book_show_page_with_word_ids(book, words)
     { bookData:
       {
         id: book.g_id,
@@ -57,7 +57,7 @@ class BookAndWordSerializer
     }
   end
 
-  def book_show_page_with_no_word_ids(book)
+  def self.book_show_page_with_no_word_ids(book)
     { bookData:
       {
         id: book.g_id,
