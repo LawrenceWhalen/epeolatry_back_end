@@ -13,7 +13,7 @@ class Api::V1::User::BooksController < ApplicationController
 
   def show
     book = UserBooksFacade.single_book(params[:auth_token], params[:id])
-    word_ids = Glossary.where('book_id = ? AND user_id = ?', params[:id], params[:user_id]).pluck(word_id)
+    word_ids = Glossary.where('book_id = ? AND user_id = ?', params[:id], params[:user_id]).pluck(:word_id)
 
     if word_ids
       words = word_ids.map do |id|
