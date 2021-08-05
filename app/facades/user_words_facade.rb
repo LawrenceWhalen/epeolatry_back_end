@@ -24,8 +24,11 @@ class UserWordsFacade
         BookFacade.create_book_object_with_given_id(word.book_id)
       end]
     end
+    
+    return 'No Words Saved' if word_with_book_objects == []
+
     word_with_book_objects.map do |word|
-      test = WordAndBooksPoro.new(
+      WordAndBooksPoro.new(
         word: word[0][:word],
         definition: word[0][:definition],
         phonetic: word[0][:phonetic],
