@@ -55,6 +55,5 @@ RSpec.describe 'Dashboard Request' do
 
   it 'returns searched word with longest length' do
     expect(@word_stats[:longest_word]).to eq('shortestwordeverontheplanet')
-    binding.pry
   end
 end
