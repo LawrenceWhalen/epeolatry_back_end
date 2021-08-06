@@ -36,10 +36,10 @@ class BookService
   end
 
   def self.volume_lookup(book_id)
-    Rails.cache.fetch("#{boo_id}_lookup", expires_in: 6.hours) do
+    # Rails.cache.fetch("#{book_id}_lookup", expires_in: 6.hours) do
       response = conn.get("/books/v1/volumes/#{book_id}")
-    end
-    JSON.parse(response.body, symbolize_names: true)
+      test = JSON.parse(response.body, symbolize_names: true)
+    # end
   end
 
   def self.conn(auth_token = nil)
