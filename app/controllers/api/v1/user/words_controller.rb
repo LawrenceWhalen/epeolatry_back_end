@@ -2,16 +2,14 @@ class Api::V1::User::WordsController < ApplicationController
   def index
     word_ids = Glossary.users_words(params[:user_id])
     words = Word.find(word_ids)
-    
-    render json: WordSerializer.new(words)
-    # word_with_books = UserWordsFacade.words_with_books(word_ids, params[:user_id])
-    # binding.pry
-    # if word_with_books.class != String
-    #   render json: WordWithBooksSerializer.new(word_with_books)
-    # else
-    #   alert = AlertPoro.new(alert: 'No Books Saved', id: 404)
-    #   render json: AlertSerializer.new(alert)
-    # end
+
+    word_with_books = UserWordsFacade.words_with_books(word_ids, params[:user_id])
+    if word_with_books.class != String
+      render json: WordWithBooksSerializer.new(word_with_books)
+    else
+      alert = AlertPoro.new(alert: 'No Books Saved', id: 404)
+      render json: AlertSerializer.new(alert)
+    end
   end
 
   def create
