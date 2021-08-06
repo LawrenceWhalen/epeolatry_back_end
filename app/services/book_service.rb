@@ -36,8 +36,9 @@ class BookService
   end
 
   def self.volume_lookup(book_id)
-    response = conn.get("/books/v1/volumes/#{book_id}")
-
+    Rails.cache.fetch("#{boo_id}_lookup", expires_in: 6.hours) do
+      response = conn.get("/books/v1/volumes/#{book_id}")
+    end
     JSON.parse(response.body, symbolize_names: true)
   end
 
