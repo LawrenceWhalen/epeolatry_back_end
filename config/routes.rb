@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       namespace :user do
         resources :books, only: [:index, :show, :create, :destroy]
         resources :words, only: [:index, :create, :show]
-        get '/dashboard', to: 'dashboard#show'
+        get '/dashboard/:user_id', to: 'dashboard#show'
       end
     end
   end
